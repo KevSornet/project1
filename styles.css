@@ -1,0 +1,40 @@
+/* V NAV BAR V */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+ul > li {
+    float: left;
+}
+
+ul > #right {
+    float: right;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+/* ^ NAV BAR ^ */
+
+
+
+/* V FOOTER V */
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}
+/* ^ FOOTER ^ */
