@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>Shook Milk Company</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="customers.html">Customers</a></li>
+                    <li><a href="foods.html">Foods</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li id="right"><a href="signin.html">Sign in</a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1>Add Order</h1>
+            </header>
+            <main class="add_order_page">
+                <section id="labels">
+                    <p>Name
+                    <input type="text" placeholder="" id="order_input">
+                    </p>
+                    <p>Order
+                    <select id="foods">
+                        <optgroup label="Milkshakes">
+                            <option>I Miss You</option>
+                        </optgroup>
+                        <optgroup label="Sides">
+                            <option>Chili Cheese Fries</option>
+                            <option>alapeno Poppers</option>
+                        </optgroup>
+                    </select>
+                    <!-- added this drop down for fun, but we can hardcode an actual order if you want-->
+                    <p>Quantity
+                    <input type="text" placeholder="" id="quantity">
+                    </p>
+                </section>
+                <button id="addorder_button">Add Order</button>
+            </main>
+            <footer>
+                <h3>Need help with anything? Contact us through shookmilk@business.com</h3>
+            </footer>
+        </body>
+    </html>
