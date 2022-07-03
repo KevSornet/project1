@@ -1,10 +1,18 @@
+/* V BODY V */
+body {
+    background-color: #D9DADB;
+    margin: 0;
+}
+/* ^ BODY ^ */
+
+
 /* V NAV BAR V */
 nav > ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 30px;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
 }
   
 nav > ul > li {
@@ -17,17 +25,46 @@ nav > ul > #right {
   
 nav> ul > li > a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 25px;
     text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+nav> ul > li > p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border-right: 1px solid black;
 }
   
-nav > li > a:hover {
-    background-color: #111;
+nav> ul > li > img {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px ;
+}
+nav > ul > li > a:hover {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border-bottom: 3px solid black;
 }
 /* ^ NAV BAR ^ */
 
+
+/* V HEADER V */
+header {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+/* ^ HEADER ^ */
 
 
 /* V FOOTER V */
@@ -36,5 +73,13 @@ footer {
     bottom:0;
     width:100%;
     height:60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    text-align: center;
 }
 /* ^ FOOTER ^ */
+
+
+/* V INDEX PAGE V */
+
+/* ^ INDEX PAGE ^ */

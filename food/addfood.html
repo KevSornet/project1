@@ -4,6 +4,9 @@
             <meta charset="utf-8">
             <title>Shook Milk Company</title>
             <link rel="stylesheet" href="styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com"> 
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
         </head>
         <body>
             <nav>
@@ -16,15 +19,21 @@
                 </ul>
             </nav>
             <header>
-                <h1>Felonius Gru</h1>
-                <!-- Placeholder name -->
+                <h1>Add Food Item</h1>
             </header>
-            <main class="Customer_1_Deletion">
-                <section id="details">
-                    <p>Delete details?</p> 
+            <main class="add_food_page">
+                <section id="labels">
+                    <p>Name
+                    <input type="text" placeholder="" id="foodname_input">
+                    </p>
+                    <p>Price
+                    <input type="text" placeholder="" id="price_input">
+                    </p>
+                    <p>Details
+                    <input type="text" placeholder="" id="details_input">
+                    </p>
                 </section>
-                <a href="customer_details.html"><button id="edit">no</button></a>
-                <a href="customers.html"><button id="delete">Yes</button></a>
+                <button id="addfood_button">Add Food</button>
             </main>
             <footer>
                 <h3>Need help with anything? Contact us through shookmilk@business.com</h3>
