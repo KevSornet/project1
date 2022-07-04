@@ -1,7 +1,12 @@
+html {
+    height: 100%;
+}
+
 /* V BODY V */
 body {
     background-color: #D9DADB;
     margin: 0;
+    min-height: 100%;
 }
 /* ^ BODY ^ */
 
@@ -30,7 +35,7 @@ nav> ul > li > a {
     padding: 20px 25px;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 nav> ul > li > p {
@@ -57,15 +62,18 @@ nav > ul > li > a:hover {
     padding: -3px;
     margin: -3px;
 }
+nav > ul > li > a:active {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+    padding: -3px;
+    margin: -3px;
+}
 /* ^ NAV BAR ^ */
 
 
 /* V HEADER V */
-header {
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-}
+
 /* ^ HEADER ^ */
 
 
@@ -78,10 +86,102 @@ footer {
     font-family: 'Inter', sans-serif;
     font-weight: 200;
     text-align: center;
+    background-color: white;
+    padding: 30px;
 }
 /* ^ FOOTER ^ */
 
 
 /* V INDEX PAGE V */
+.index_page {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "left left right";
+    align-items: center;
+    justify-content: center;
+}
 
+.index_page > header {
+    background-color: #CAA5A2;
+    grid-area: left;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+    height: 70vh;
+}
+
+.index_page > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.index_page > #account {
+    background-color: #9F9D56;
+    grid-area: right;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+    height: 70vh;
+}
+
+.index_page > #account > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
 /* ^ INDEX PAGE ^ */
+
+
+/* V SIGNIN PAGE V */
+.signin_page {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "space top space2"
+      "left center right";
+    align-items: center;
+    justify-content: center;
+}
+
+.signin_page > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+    
+}
+
+.signin_page > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.signin_page > #user_n_pass {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+    height: 50vh;
+}
+
+.signin_page > #user_n_pass > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.signin_page > #user_n_pass > input {
+    text-align: right;
+}
+/* ^ SIGNIN PAGE ^ */
