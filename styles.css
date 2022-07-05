@@ -150,14 +150,15 @@ main {
 
 /* V CUSTOMERS PAGE V */
 .customers_page {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    grid-template-rows: 4;
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 4; 
+    gap: 0px 0px; 
     grid-template-areas: 
       "header header header"
-      "a a b"
-      "c c d"
-      "e e d";
+      "a b b"
+      "c d d"
+      "e f f"; 
     align-items: center;
     justify-content: center;
 }
@@ -171,52 +172,46 @@ main {
     color: white;
 }
 
-.customers_page > #customer_list > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 30px;
-}
-
-.customers_page > #button_list > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 30px;
-}
-
-.customers_page > #customer_list > ul > #info1 {
+.customers_page >  #info1 {
     grid-area: a;
     background-color: #9F9D56;
     padding: 20px;
+    margin: 20px;
 }
 
-.customers_page > #button_list > ul > #buttons1 {
+.customers_page > #buttons1 {
     grid-area: b;
     background-color: #9F9D56;
     padding: 20px;
+    margin: 20px;
 }
 
-.customers_page > #customer_list > ul > #info2 {
+.customers_page > #info2 {
     grid-area: c;
     background-color: #9F9D56;
     padding: 20px;
+    margin: 20px;
 }
 
-.customers_page > #button_list > ul > #buttons2 {
+.customers_page > #buttons2 {
     grid-area: d;
     background-color: #9F9D56;
     padding: 20px;
+    margin: 20px;
 }
 
-.customers_page > #customer_list > ul > #info3 {
+.customers_page > #info3 {
     grid-area: e;
     background-color: #9F9D56;
     padding: 20px;
+    margin: 20px;
 }
 
-.customers_page > #button_list > ul > #buttons3 {
+.customers_page > #buttons3 {
     grid-area: f;
     background-color: #9F9D56;
     padding: 20px;
+    margin: 20px;
 }
 /* ^ CUSTOMERS PAGE ^ */
 
