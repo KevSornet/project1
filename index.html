@@ -7,6 +7,7 @@
             <link rel="preconnect" href="https://fonts.googleapis.com"> 
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         </head>
         <body>
             <nav>
@@ -19,6 +20,13 @@
                     <li><a href="orders.html">ORDERS</a></li>
                     <li id="right"><a href="signin.html">SIGN IN</a></li>
                 </ul>
+                <div class="hidden">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <img src="images/shook.png">
+                    <a id="name">SHOOK</a>
+                </div>
             </nav>
             <main class="index_page">
                 <header>
@@ -26,7 +34,7 @@
                 </header>
             </main>
             <section class="clear"></section>
-            <footer>
+            <footer id="index_footer">
                 <p>Need help with anything? Contact us through shookmilk@business.com</p>
             </footer>
         </body>
