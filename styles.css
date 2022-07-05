@@ -168,50 +168,66 @@ main {
     grid-area: header;
     padding: 20px;
     margin:20px;
-    text-align: header;
+}
+
+.customers_page > header {
     color: white;
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "head button button"; 
+}
+
+.customers_page > header > h1{
+    grid-area: head;
+}
+
+.customers_page > header > #addcustomer{
+    grid-area: button;
+    align-items: center;
 }
 
 .customers_page >  #info1 {
     grid-area: a;
     background-color: #9F9D56;
-    padding: 20px;
-    margin: 20px;
+    padding: 50px;
+    margin: 20px 0 0 20px;
 }
 
 .customers_page > #buttons1 {
     grid-area: b;
     background-color: #9F9D56;
-    padding: 20px;
-    margin: 20px;
+    padding: 65px;
+    margin: 20px 20px 0 0;
 }
 
 .customers_page > #info2 {
     grid-area: c;
     background-color: #9F9D56;
-    padding: 20px;
-    margin: 20px;
+    padding: 50px;
+    margin: 0 0 0 20px;
 }
 
 .customers_page > #buttons2 {
     grid-area: d;
     background-color: #9F9D56;
-    padding: 20px;
-    margin: 20px;
+    padding: 65px;
+    margin: 0 20px 0 0;
 }
 
 .customers_page > #info3 {
     grid-area: e;
     background-color: #9F9D56;
-    padding: 20px;
-    margin: 20px;
+    padding: 50px;
+    margin: 0 0 20px 20px;
 }
 
 .customers_page > #buttons3 {
     grid-area: f;
     background-color: #9F9D56;
-    padding: 20px;
-    margin: 20px;
+    padding: 65px;
+    margin: 0 20px 20px 0;
 }
 /* ^ CUSTOMERS PAGE ^ */
 
