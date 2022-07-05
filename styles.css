@@ -1,7 +1,3 @@
-html {
-    height: 100%;
-}
-
 /* V BODY V */
 body {
     background-color: #D9DADB;
@@ -83,53 +79,31 @@ footer {
     bottom:0;
     width:100%;
     height:60px;
+    background-color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+footer > p{
+    text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 200;
     text-align: center;
-    background-color: white;
-    padding: 30px;
 }
 /* ^ FOOTER ^ */
 
 
 /* V INDEX PAGE V */
-.index_page {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "left left right";
-    align-items: center;
-    justify-content: center;
-}
-
 .index_page > header {
     background-color: #CAA5A2;
     grid-area: left;
     padding: 20px;
-    margin:20px;
+    margin:20px 20px 20px 20px;
     text-align: center;
     color: white;
-    height: 70vh;
 }
 
 .index_page > header > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-
-.index_page > #account {
-    background-color: #9F9D56;
-    grid-area: right;
-    padding: 20px;
-    margin:20px;
-    text-align: center;
-    color: white;
-    height: 70vh;
-}
-
-.index_page > #account > p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-align: center;
