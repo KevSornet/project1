@@ -672,7 +672,228 @@ footer > p{
 .add_customers_page > #labelss > #space {
     grid-area: space;
 }
-/* ^ SIGNIN PAGE ^ */
+/* ^ ADDCUSTOMER PAGE ^ */
+
+
+/* V CUSTOMERS DETAILS PAGE V */
+/*grid for main*/
+.Customer_1_Page {
+    color: white;
+    display: grid; 
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 2;
+    gap: 0px 0px;  
+    grid-template-areas: 
+      "header order"
+      "gdetails odetails"; 
+}
+
+.Customer_1_Page > header {
+    background-color: #707251;
+    grid-area: header;
+    padding: 20px;
+    margin:20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* grid for header */
+.Customer_1_Page > header {
+    color: white;
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "head button button"; 
+}
+
+.Customer_1_Page > header > h1{
+    grid-area: head;
+    padding: 0 0 0 10px;
+}
+
+.Customer_1_Page > header > #options{
+    grid-area: button;
+    align-items: center;
+    padding: 30px 0 0 50px;
+}
+
+.Customer_1_Page > #details {
+    grid-area: gdetails;
+}
+
+/* grid for details */
+.Customer_1_Page > #details > ul{
+    grid-area: gdetails;
+    margin: 0 20px 75.5px 20px;
+    padding: 20px;
+    display: grid;
+    background-color: #9F9D56; 
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 4;
+    gap: 0px 0px;  
+    grid-template-areas: 
+      "label1 detail1"
+      "label2 detail2"
+      "label3 detail3"
+      "label4 detail4";
+    list-style-type: none;
+}
+
+/* row 1 */
+.Customer_1_Page > #details > ul > #label1 {
+    grid-area: label1;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.Customer_1_Page > #details > ul > #address {
+    grid-area: detail1;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* row 2 */
+.Customer_1_Page > #details > ul > #label2 {
+    grid-area: label2;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.Customer_1_Page > #details > ul > #city_province {
+    grid-area: detail2;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* row 3 */
+.Customer_1_Page > #details > ul > #label3 {
+    grid-area: label3;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.Customer_1_Page > #details > ul > #email {
+    grid-area: detail3;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* row 4 */
+.Customer_1_Page > #details > ul > #label4 {
+    grid-area: label4;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.Customer_1_Page > #details > ul > #contact {
+    grid-area: detail4;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/*order transactions*/
+.Customer_1_Page > #orderlabel {
+    background-color: #707251;
+    grid-area: order;
+    padding: 26.5px 20px 26.5px 30px;
+    margin: 0 20px 0 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.Customer_1_Page > #c1order {
+    background-color: #9F9D56;
+    list-style-type: none;
+    grid-area: odetails;
+    margin: 0 20px 220px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/*order transactions grid*/
+.Customer_1_Page > #c1order {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "left right"; 
+}
+
+.Customer_1_Page > #c1order > #left,#right{
+    list-style-type: none;
+}
+
+/*order transactions left grid*/
+.Customer_1_Page > #c1order > #left{
+    grid-area: left;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-rows: 3; 
+    grid-template-areas: 
+      "a"
+      "b"
+      "c"; 
+}
+
+.Customer_1_Page > #c1order > #left > .orderlabel {
+    grid-area: a;
+    font-weight: 300;
+}
+
+.Customer_1_Page > #c1order > #left > .order1 {
+    grid-area: b;
+    font-weight: 200;
+}
+
+.Customer_1_Page > #c1order > #left > .order2 {
+    grid-area: c;
+    font-weight: 200;
+}
+
+/*order transactions right grid*/
+.Customer_1_Page > #c1order > #right{
+    grid-area: right;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-rows: 3; 
+    grid-template-areas: 
+      "a"
+      "b"
+      "c"; 
+}
+
+.Customer_1_Page > #c1order > #right > .orderlabel {
+    grid-area: a;
+    font-weight: 300;
+}
+
+.Customer_1_Page > #c1order > #right > .order1 {
+    grid-area: b;
+    font-weight: 200;
+}
+
+.Customer_1_Page > #c1order > #right > .order2 {
+    grid-area: c;
+    font-weight: 200;
+}
+
+.Customer_1_Page > #c1order > #button1 {
+    grid-area: button1;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* ^ CUSTOMERS PAGE ^ */
 
 
 /* FOOD RELATED PAGES */
