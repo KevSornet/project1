@@ -217,14 +217,13 @@ footer > p{
 /* V CUSTOMERS PAGE V */
 .customers_page {
     display: grid; 
-    grid-template-columns: auto 1fr 1fr; 
-    grid-template-rows: 4; 
+    grid-template-columns: auto; 
+    grid-template-rows: 3; 
     gap: 0px 0px; 
     grid-template-areas: 
-      "header header header"
-      "a b b"
-      "c d d"
-      "e f f"; 
+      "header"
+      "main"
+      "main"; 
     align-items: center;
     justify-content: center;
 }
@@ -233,7 +232,9 @@ footer > p{
     background-color: #707251;
     grid-area: header;
     padding: 20px;
-    margin:20px;
+    margin:20px 0 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 .customers_page > header {
@@ -247,6 +248,7 @@ footer > p{
 
 .customers_page > header > h1{
     grid-area: head;
+    padding: 0 0 0 40px;
 }
 
 .customers_page > header > #addcustomer{
@@ -255,47 +257,135 @@ footer > p{
     padding: 30px 0 0 50px;
 }
 
-.customers_page >  #info1 {
+.customers_page > #customer_button {
+    background-color: #9F9D56;
+    color:white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.customers_page > #customer_button {
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 3; 
+    grid-template-areas: 
+      "info1 button1 button1"
+      "info2 button2 button2"
+      "info3 button3 button3"; 
+}
+
+.customers_page > #customer_button > #info1 {
+    grid-area: info1;
+    padding: 20px 50px 0 20px;
+}
+
+.customers_page > #customer_button > #info1 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto 2fr auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.customers_page > #customer_button > #info1 > ul > .name {
     grid-area: a;
-    background-color: #9F9D56;
-    padding: 51px 50px 50px 51px;
-    margin: 20px 0 0 20px;
-    
+    place-self: center;
 }
 
-.customers_page > #buttons1 {
+.customers_page > #customer_button > #info1 >  ul > .address {
     grid-area: b;
-    background-color: #9F9D56;
-    padding: 65px;
-    margin: 20px 20px 0 0;
+    place-self: center;
 }
 
-.customers_page > #info2 {
+.customers_page > #customer_button > #info1 >  ul > .number {
     grid-area: c;
-    background-color: #9F9D56;
-    padding: 51px 50px 50px 51px;
-    margin: 0 0 0 20px;
+    place-self: center;
 }
 
-.customers_page > #buttons2 {
-    grid-area: d;
-    background-color: #9F9D56;
-    padding: 65px;
-    margin: 0 20px 0 0;
+.customers_page > #customer_button > #button1 {
+    grid-area: button1;
+    padding: 34px 20px;
+    text-align: center;
 }
 
-.customers_page > #info3 {
-    grid-area: e;
-    background-color: #9F9D56;
-    padding: 51px 50px 50px 51px;
-    margin: 0 0 20px 20px;
+.customers_page > #customer_button > #info2 {
+    grid-area: info2;
+    padding: 20px 50px 0 20px;
 }
 
-.customers_page > #buttons3 {
-    grid-area: f;
-    background-color: #9F9D56;
-    padding: 65px;
-    margin: 0 20px 20px 0;
+.customers_page > #customer_button > #info2 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto 2fr auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.customers_page > #customer_button > #info2 > ul > .name {
+    grid-area: a;
+    place-self: center;
+}
+
+.customers_page > #customer_button > #info2 >  ul > .address {
+    grid-area: b;
+    place-self: center;
+}
+
+.customers_page > #customer_button > #info2 >  ul > .number {
+    grid-area: c;
+    place-self: center;
+}
+
+.customers_page > #customer_button > #button2 {
+    grid-area: button2;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+.customers_page > #customer_button > #info3 {
+    grid-area: info3;
+    padding: 20px 50px 0 20px;
+}
+
+.customers_page > #customer_button > #info3 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto 2fr auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.customers_page > #customer_button > #info3 > ul > .name {
+    grid-area: a;
+    place-self: center;
+}
+
+.customers_page > #customer_button > #info3 >  ul > .address {
+    grid-area: b;
+    place-self: center;
+}
+
+.customers_page > #customer_button > #info3 >  ul > .number {
+    grid-area: c;
+    place-self: center;
+}
+
+.customers_page > #customer_button > #button3 {
+    grid-area: button3;
+    padding: 34px 20px;
+    text-align: center;
 }
 /* ^ CUSTOMERS PAGE ^ */
 
