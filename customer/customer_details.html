@@ -20,44 +20,45 @@
                     <li id="right"><a href="../signin.html">SIGN IN</a></li>
                 </ul>
             </nav>
-            <header>
-                <h1>Felonius Gru</h1>
-                <!-- Placeholder name -->
-            </header>
             <main class="Customer_1_Page">
+                <header>
+                    <h1>Felonius Gru</h1>
+                    <section id="options">
+                        <a href="editcustomer1.html"><button id="edit">Edit Details</button></a>
+                        <a href="confirm_customer1_deletion.html"><button>Delete Customer</button></a>
+                        <a href="../customers.html"><button>Return</button></a>
+                    </section>
+                </header>
                 <section id="details">
-                    <p>Unit B 43 Stuart St., Maginhawa</p> 
-                    <p>Quezon City, Metro Manila</p>
-                    <p>despicablegru@gmail.com</p>
-                    <p>0912 345 6789</p>
+                    <ul>
+                        <li id="label1"><h3>Address:</h3></li>
+                        <li id="address">Unit B 43 Stuart St., Maginhawa</li>
+
+                        <li id="label2"><h3>City / Province:</h3></li>
+                        <li id="city_province">Quezon City, Metro Manila</li>
+
+                        <li id="label3"><h3>Email:</h3></li>
+                        <li id="email">despicablegru@gmail.com</li>
+
+                        <li id="label4"><h3>Contact Number:</h3></li>
+                        <li id="contact">0912 345 6789</li>
+                    </ul>
+                </section>
+                <section id="orderlabel">
+                    <h2>Order Transactions</h2>
                 </section>
                 <section id="c1order">
-                    <p>Order Transactions</p>
-                    <ul id="orderlist">
-                        <!-- Need to use CSS to make 2 columns -->
-                        <li>Order #</li>
-                        <li>#0000001</li>
-                        <li>#0000101</li>
-                        <li>Order Date</li>
-                        <li>12/31/2021</li>
-                        <li>02/14/2022</li>
+                    <ul id="left">
+                        <li class="orderlabel"><h3>Order #</h3></li>
+                        <li class="order1">#0000001</li>
+                        <li class="order2">#0000101</li>
                     </ul>
-                    <!-- In case CSS becomes too hassle
-                    <ul>
-                        <li>Order #</li>
-                        <li>#0000001</li>
-                        <li>#0000101</li>
+                    <ul id="right">
+                        <li class="orderlabel"><h3>Order Date</h3></li>
+                        <li class="order1">12/31/2021</li>
+                        <li class="order2">02/14/2022</li>
                     </ul>
-                    <ul>
-                        <li>Order Date</li>
-                        <li>12/31/2021</li>
-                        <li>02/14/2022</li>
-                    </ul>
-                    -->
                 </section>
-                <a href="editcustomer1.html"><button id="edit">Edit Details</button></a>
-                <a href="confirm_customer1_deletion.html"><button>Delete Customer</button></a>
-                <a href="../customers.html"><button>Return</button></a>
             </main>
             <section class="clear"></section>
             <footer>
