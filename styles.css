@@ -396,6 +396,283 @@ footer > p{
 /* ^ CUSTOMERS PAGE ^ */
 
 
+
+/* FOOD RELATED PAGES */
+
+/* V FOOD PAGE V */
+/* grid for main */
+.foods_page {
+    display: grid; 
+    grid-template-columns: auto; 
+    grid-template-rows: 3; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header"
+      "main"
+      "main"; 
+    align-items: center;
+    justify-content: center;
+}
+
+.foods_page > header {
+    background-color: #707251;
+    grid-area: header;
+    padding: 20px;
+    margin:20px 0 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* grid for header */
+.foods_page > header {
+    color: white;
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "head button button"; 
+}
+
+.foods_page > header > h1{
+    grid-area: head;
+    padding: 0 0 0 40px;
+}
+
+.foods_page > header > #options{
+    grid-area: button;
+    align-items: center;
+    padding: 30px 0 0 50px;
+}
+
+.foods_page > #food_list {
+    background-color: #9F9D56;
+    color:white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+/* grid for customer and button section */
+.foods_page > #food_list {
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 6; 
+    grid-template-areas: 
+      "info1 button1 button1"
+      "info2 button2 button2"
+      "info3 button3 button3"
+      "info4 button4 button4"
+      "info5 button5 button5"
+      "info6 button6 button6"; 
+}
+
+/* row 1 */
+.foods_page > #food_list > #info1 {
+    grid-area: info1;
+    padding: 20px 50px 0 20px;
+}
+/* grid for info 1 */
+.foods_page > #food_list > #info1 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.foods_page > #food_list > #info1 > ul > .name {
+    grid-area: a;
+    place-self: center;
+}
+
+.foods_page > #food_list > #info1 >  ul > .price {
+    grid-area: b;
+    place-self: center;
+}
+
+.foods_page > #food_list > #button1 {
+    grid-area: button1;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* row 2 */
+.foods_page > #food_list > #info2 {
+    grid-area: info2;
+    padding: 20px 50px 0 20px;
+}
+/* grid for info 2 */
+.foods_page > #food_list > #info2 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.foods_page > #food_list > #info2 > ul > .name {
+    grid-area: a;
+    place-self: center;
+}
+
+.foods_page > #food_list > #info2 >  ul > .price {
+    grid-area: b;
+    place-self: center;
+}
+
+.foods_page > #food_list > #button2 {
+    grid-area: button2;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* row 3 */
+.foods_page > #food_list > #info3 {
+    grid-area: info3;
+    padding: 20px 50px 0 20px;
+}
+/* grid for info 3 */
+.foods_page > #food_list > #info3 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.foods_page > #food_list > #info3 > ul > .name {
+    grid-area: a;
+    place-self: center;
+}
+
+.foods_page > #food_list > #info3 >  ul > .price {
+    grid-area: b;
+    place-self: center;
+}
+
+.foods_page > #food_list > #button3 {
+    grid-area: button3;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* row 4 */
+.foods_page > #food_list > #info4 {
+    grid-area: info4;
+    padding: 20px 50px 0 20px;
+}
+/* grid for info 4 */
+.foods_page > #food_list > #info4 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.foods_page > #food_list > #info4 > ul > .name {
+    grid-area: a;
+    place-self: center;
+}
+
+.foods_page > #food_list > #info4 >  ul > .price {
+    grid-area: b;
+    place-self: center;
+}
+
+.foods_page > #food_list > #button4 {
+    grid-area: button4;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* row 5 */
+.foods_page > #food_list > #info5 {
+    grid-area: info5;
+    padding: 20px 50px 0 20px;
+}
+/* grid for info 5 */
+.foods_page > #food_list > #info5 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.foods_page > #food_list > #info5 > ul > .name {
+    grid-area: a;
+    place-self: center;
+}
+
+.foods_page > #food_list > #info5 >  ul > .price {
+    grid-area: b;
+    place-self: center;
+}
+
+.foods_page > #food_list > #button5 {
+    grid-area: button5;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* row 6 */
+.foods_page > #food_list > #info6 {
+    grid-area: info6;
+    padding: 20px 50px 0 20px;
+}
+/* grid for info 6 */
+.foods_page > #food_list > #info6 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.foods_page > #food_list > #info6 > ul > .name {
+    grid-area: a;
+    place-self: center;
+}
+
+.foods_page > #food_list > #info6 >  ul > .price {
+    grid-area: b;
+    place-self: center;
+}
+
+.foods_page > #food_list > #button6 {
+    grid-area: button6;
+    padding: 34px 20px;
+    text-align: center;
+}
+/* ^ FOODS PAGE ^ */
+
+
+
+
 /* V FOOTER V */
 .clear {
     clear: both; 
