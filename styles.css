@@ -215,6 +215,7 @@ footer > p{
 /* CUSTOMER RELATED PAGES */
 
 /* V CUSTOMERS PAGE V */
+/* grid for main */
 .customers_page {
     display: grid; 
     grid-template-columns: auto; 
@@ -237,6 +238,7 @@ footer > p{
     font-weight: 400;
 }
 
+/* grid for header */
 .customers_page > header {
     color: white;
     display: grid; 
@@ -264,6 +266,7 @@ footer > p{
     font-weight: 300;
 }
 
+/* grid for customer and button section */
 .customers_page > #customer_button {
     display: grid; 
     grid-template-columns: auto 1fr 1fr; 
@@ -279,6 +282,7 @@ footer > p{
     padding: 20px 50px 0 20px;
 }
 
+/* grid for info 1 */
 .customers_page > #customer_button > #info1 > ul{
     list-style-type: none;
     display: grid;
@@ -317,6 +321,7 @@ footer > p{
     padding: 20px 50px 0 20px;
 }
 
+/* grid for info 2 */
 .customers_page > #customer_button > #info2 > ul{
     list-style-type: none;
     display: grid;
@@ -355,6 +360,7 @@ footer > p{
     padding: 20px 50px 0 20px;
 }
 
+/* grid for info 3 */
 .customers_page > #customer_button > #info3 > ul{
     list-style-type: none;
     display: grid;
