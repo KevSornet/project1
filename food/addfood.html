@@ -20,25 +20,37 @@
                     <li id="right"><a href="../signin.html">SIGN IN</a></li>
                 </ul>
             </nav>
-            <header>
-                <h1>Add Food Item</h1>
-            </header>
             <main class="add_food_page">
+                <header>
+                    <h1>Add Food Item</h1>
+                </header>
                 <section id="labels">
-                    <p>Name
-                    <input type="text" placeholder="" id="foodname_input">
-                    </p>
-                    <p>Price
-                    <input type="text" placeholder="" id="price_input">
-                    </p>
-                    <p>Details
-                    <input type="text" placeholder="" id="details_input">
-                    </p>
+                    <section id="foodname">
+                        <ul>
+                            <li>Name</li>
+                            <li><input type="text" placeholder="" id="foodname_input"></li>
+                        </ul>
+                    </section>
+                    <section id="price">
+                        <ul>
+                            <li>Price</li>
+                            <li><input type="text" placeholder="" id="price_input"></li>
+                        </ul>
+                    </section>
+                    <section id="detail">
+                        <ul>
+                            <li>Details</li>
+                            <li><input type="text" placeholder="" id="details_input"></li>
+                        </ul>
+                    </section>
+                    <section id="button">
+                        <a href="../foods.html"><button id="addfood_button">Add Food</button></a>
+                    </section>
+                    <section class="space"></section>
                 </section>
-                <button id="addfood_button">Add Food</button>
             </main>
             <section class="clear"></section>
-            <footer>
+            <footer id="absolute_footer">
                 <p>Need help with anything? Contact us through shookmilk@business.com</p>
             </footer>
         </body>

@@ -674,7 +674,6 @@ footer > p{
 }
 /* ^ SIGNIN PAGE ^ */
 
-
 /* FOOD RELATED PAGES */
 
 /* V FOOD PAGE V */
@@ -948,7 +947,133 @@ footer > p{
 }
 /* ^ FOODS PAGE ^ */
 
+/* Add Food Page */
 
+.add_food_page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+}
+
+.add_food_page > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.add_food_page > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.add_food_page > #labels {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.add_food_page > #labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    grid-template-areas: 
+      "a a"
+      "b b"
+      "c c"
+      "space button";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*foodname*/
+.add_food_page > #labels > #foodname {
+    grid-area: a;
+}
+.add_food_page > #labels > #foodname> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.add_food_page > #labels > #foodname > ul > .label{
+    grid-area: userlabel;
+}
+.add_food_page > #labels > #foodname > ul > .input{
+    grid-area: userinput;
+}
+
+/*price*/
+.add_food_page > #labels > #price {
+    grid-area: b;
+}
+.add_food_page > #labels > #price> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.add_food_page > #labels > #price > ul > .label{
+    grid-area: userlabel;
+}
+.add_food_page > #labels > #price > ul > .input{
+    grid-area: userinput;
+}
+
+/*detail*/
+.add_food_page > #labels > #detail {
+    grid-area: c;
+}
+.add_food_page > #labels > #detail> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.add_food_page > #labels > #detail > ul > .label{
+    grid-area: userlabel;
+}
+.add_food_page > #labels > #detail > ul > .input{
+    grid-area: userinput;
+}
+
+/*button*/
+.add_food_page > #labels > #button {
+    grid-area: button;
+}
+.add_food_page > #labelss > #space {
+    grid-area: space;
+}
 
 /* ORDER RELATED PAGES */
 
@@ -1175,6 +1300,136 @@ footer > p{
     padding: 34px 20px;
     text-align: center;
 }
+
+/* ADD ORDERS PAGE */
+
+.add_order_page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+}
+
+.add_order_page > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.add_order_page > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.add_order_page > #labels {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.add_order_page > #labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    grid-template-areas: 
+      "a a"
+      "b b"
+      "c c"
+      "space button";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*ordername*/
+.add_order_page > #labels > #ordername {
+    grid-area: a;
+}
+.add_order_page > #labels > #ordername> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.add_order_page > #labels > #ordername > ul > .label{
+    grid-area: userlabel;
+}
+.add_order_page > #labels > #ordername > ul > .input{
+    grid-area: userinput;
+}
+
+/*foodorder*/
+.add_order_page > #labels > #foodorder {
+    grid-area: b;
+}
+.add_order_page > #labels > #foodorder> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.add_order_page > #labels > #foodorder > ul > .label{
+    grid-area: userlabel;
+}
+.add_order_page > #labels > #foodorder > ul > .input{
+    grid-area: userinput;
+}
+
+/*quantity*/
+.add_order_page > #labels > #quantity {
+    grid-area: c;
+}
+.add_order_page > #labels > #quantity> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.add_order_page > #labels > #quantity > ul > .label{
+    grid-area: userlabel;
+}
+.add_order_page > #labels > #quantity > ul > .input{
+    grid-area: userinput;
+}
+
+/*button*/
+.add_order_page > #labels > #button {
+    grid-area: button;
+}
+.add_order_page > #labelss > #space {
+    grid-area: space;
+}
+
+
 /* ^ CUSTOMERS PAGE ^ */
 
 
@@ -1196,7 +1451,7 @@ footer {
     margin: 0;
 }
 
-#index_footer {
+#absolute_footer {
     position: absolute;
 }
 
