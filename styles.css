@@ -277,6 +277,7 @@ footer > p{
       "info3 button3 button3"; 
 }
 
+/* row 1 */
 .customers_page > #customer_button > #info1 {
     grid-area: info1;
     padding: 20px 50px 0 20px;
@@ -316,6 +317,7 @@ footer > p{
     text-align: center;
 }
 
+/* row 2 */
 .customers_page > #customer_button > #info2 {
     grid-area: info2;
     padding: 20px 50px 0 20px;
@@ -355,6 +357,7 @@ footer > p{
     text-align: center;
 }
 
+/* row 3 */
 .customers_page > #customer_button > #info3 {
     grid-area: info3;
     padding: 20px 50px 0 20px;
@@ -670,6 +673,234 @@ footer > p{
 }
 /* ^ FOODS PAGE ^ */
 
+
+
+/* ORDER RELATED PAGES */
+
+/* V ORDERS PAGE V */
+/* grid for main */
+.orders_page {
+    display: grid; 
+    grid-template-columns: auto; 
+    grid-template-rows: 3; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header"
+      "main"
+      "main"; 
+    align-items: center;
+    justify-content: center;
+}
+
+.orders_page > header {
+    background-color: #707251;
+    grid-area: header;
+    padding: 20px;
+    margin:20px 0 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* grid for header */
+.orders_page > header {
+    color: white;
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "head button button"; 
+}
+
+.orders_page > header > h1{
+    grid-area: head;
+    padding: 0 0 0 40px;
+}
+
+.orders_page > header > #options{
+    grid-area: button;
+    align-items: center;
+    padding: 30px 0 0 50px;
+}
+
+.orders_page > #order_list {
+    background-color: #9F9D56;
+    color:white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+/* grid for customer and button section */
+.orders_page > #order_list {
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 4; 
+    grid-template-areas: 
+      "info1 button1 button1"
+      "info2 button2 button2"
+      "info3 button3 button3"
+      "info4 button4 button4"; 
+}
+
+/* row 1 */
+.orders_page > #order_list > #info1 {
+    grid-area: info1;
+    padding: 20px 50px 0 20px;
+}
+
+/* grid for info 1 */
+.orders_page > #order_list > #info1 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto 2fr auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.orders_page > #order_list > #info1 > ul > .orderno {
+    grid-area: a;
+    place-self: center;
+}
+
+.orders_page > #order_list > #info1 >  ul > .name {
+    grid-area: b;
+    place-self: center;
+}
+
+.orders_page > #order_list > #info1 >  ul > .date {
+    grid-area: c;
+    place-self: center;
+}
+
+.orders_page > #order_list > #button1 {
+    grid-area: button1;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* row 2 */
+.orders_page > #order_list > #info2 {
+    grid-area: info2;
+    padding: 20px 50px 0 20px;
+}
+
+/* grid for info 2 */
+.orders_page > #order_list > #info2 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto 2fr auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.orders_page > #order_list > #info2 > ul > .orderno {
+    grid-area: a;
+    place-self: center;
+}
+
+.orders_page > #order_list > #info2 >  ul > .name {
+    grid-area: b;
+    place-self: center;
+}
+
+.orders_page > #order_list > #info2 >  ul > .date {
+    grid-area: c;
+    place-self: center;
+}
+
+.orders_page > #order_list > #button2 {
+    grid-area: button2;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* row 3 */
+.orders_page > #order_list > #info3 {
+    grid-area: info3;
+    padding: 20px 50px 0 20px;
+}
+
+/* grid for info 3 */
+.orders_page > #order_list > #info3 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto 2fr auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.orders_page > #order_list > #info3 > ul > .orderno {
+    grid-area: a;
+    place-self: center;
+}
+
+.orders_page > #order_list > #info3 >  ul > .name {
+    grid-area: b;
+    place-self: center;
+}
+
+.orders_page > #order_list > #info3 >  ul > .date {
+    grid-area: c;
+    place-self: center;
+}
+
+.orders_page > #order_list > #button3 {
+    grid-area: button3;
+    padding: 34px 20px;
+    text-align: center;
+}
+
+/* row 4 */
+.orders_page > #order_list > #info4 {
+    grid-area: info4;
+    padding: 20px 50px 0 20px;
+}
+
+/* grid for info 4 */
+.orders_page > #order_list > #info4 > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto 2fr auto; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+    justify-items: center;
+    align-items: center;
+}
+
+.orders_page > #order_list > #info4 > ul > .orderno {
+    grid-area: a;
+    place-self: center;
+}
+
+.orders_page > #order_list > #info4 >  ul > .name {
+    grid-area: b;
+    place-self: center;
+}
+
+.orders_page > #order_list > #info4 >  ul > .date {
+    grid-area: c;
+    place-self: center;
+}
+
+.orders_page > #order_list > #button4 {
+    grid-area: button4;
+    padding: 34px 20px;
+    text-align: center;
+}
+/* ^ CUSTOMERS PAGE ^ */
 
 
 
