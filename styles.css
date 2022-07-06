@@ -165,11 +165,11 @@ footer > p{
 /* V SIGNIN PAGE V */
 .signin_page {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto;
     grid-template-rows: 2;
     grid-template-areas: 
-      "space top space2"
-      "left center right";
+      "top"
+      "center";
     align-items: center;
     justify-content: center;
 }
@@ -181,7 +181,6 @@ footer > p{
     margin:20px;
     text-align: center;
     color: white;
-    
 }
 
 .signin_page > header > h1 {
@@ -198,16 +197,74 @@ footer > p{
     text-align: center;
     color: white;
     height: 50vh;
-}
-
-.signin_page > #user_n_pass > p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-align: center;
 }
 
-.signin_page > #user_n_pass > input {
-    text-align: right;
+.signin_page > #user_n_pass {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    grid-template-areas: 
+      "user user"
+      "pass pass"
+      "button space";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*username*/
+.signin_page > #user_n_pass > #username {
+    grid-area: user;
+}
+.signin_page > #user_n_pass > #username > ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.signin_page > #user_n_pass > #username > ul > .label{
+    grid-area: userlabel;
+}
+.signin_page > #user_n_pass > #username > ul > .userinput{
+    grid-area: userinput;
+}
+
+/*password*/
+.signin_page > #user_n_pass > #password {
+    grid-area: pass;
+}
+.signin_page > #user_n_pass > #password > ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.signin_page > #user_n_pass > #username > ul > .label{
+    grid-area: userlabel;
+}
+.signin_page > #user_n_pass > #username > ul > .userinput{
+    grid-area: userinput;
+}
+
+/*button*/
+.signin_page > #user_n_pass > #button {
+    grid-area: button;
+}
+.signin_page > #user_n_pass > #space {
+    grid-area: space;
 }
 /* ^ SIGNIN PAGE ^ */
 
