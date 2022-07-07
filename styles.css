@@ -159,6 +159,24 @@ footer > p{
     font-weight: 400;
     text-align: center;
 }
+
+.index_page > #container {
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    height: 481px;
+    background-image: url(images/background_content.png);
+}
+
+.index_page > #container > .tagline {
+    margin: 50px 0 200px 0px;
+}
+
+.index_page > #container > img{
+    float: right;
+    margin-top: -50px;
+    padding-right: 150px;
+}
+
 /* ^ INDEX PAGE ^ */
 
 
@@ -266,12 +284,6 @@ footer > p{
     grid-area: space;
 }
 /* ^ SIGNIN PAGE ^ */
-
-
-
-
-
-
 
 
 /* CUSTOMER RELATED PAGES */
@@ -491,7 +503,7 @@ footer > p{
     background-color: #9F9D56;
     grid-area: center;
     padding: 20px;
-    margin:0 20px 20px 20px;
+    margin:20px;
     text-align: center;
     color: white;
     font-family: 'Inter', sans-serif;
@@ -680,6 +692,7 @@ footer > p{
 }
 /* ^ ADDCUSTOMER PAGE ^ */
 
+
 /* V CUSTOMERS DETAILS PAGE V */
 /*grid for main*/
 .Customer_1_Page {
@@ -721,7 +734,7 @@ footer > p{
 
 .Customer_1_Page > header > #options{
     grid-area: button;
-    text-align: center;
+    align-items: center;
     padding: 30px 0 0 50px;
 }
 
@@ -897,606 +910,8 @@ footer > p{
     padding: 34px 20px;
     text-align: center;
 }
-/* ^ CUSTOMER DETAILS PAGE ^ */
 
-/* V EDIT CUSTOMER DETAILS PAGE V */
-.edit_customer_page {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 2;
-    grid-template-areas: 
-      "top"
-      "center";
-    align-items: center;
-    justify-content: center;
-}
-
-.edit_customer_page > header {
-    background-color: #707251;
-    grid-area: top;
-    padding: 20px;
-    margin:20px;
-    text-align: center;
-    color: white;
-}
-
-.edit_customer_page > header > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-
-.edit_customer_page > #labels {
-    background-color: #9F9D56;
-    grid-area: center;
-    padding: 20px;
-    margin:0 20px 20px 20px;
-    text-align: center;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-
-.edit_customer_page > #labels {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 7;
-    grid-template-areas: 
-      "a a"
-      "b b"
-      "c c"
-      "d d"
-      "e e"
-      "f f"
-      "g g"
-      "button1 button2";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-
-/*firstname*/
-.edit_customer_page > #labels > #firstname {
-    grid-area: a;
-}
-.edit_customer_page > #labels > #firstname> ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0 20px 10px 25px;
-}
-.edit_customer_page > #labels > #firstname > ul > .label{
-    grid-area: userlabel;
-}
-.edit_customer_page > #labels > #firstname > ul > .input{
-    grid-area: userinput;
-}
-
-/*surname*/
-.edit_customer_page > #labels > #surname {
-    grid-area: b;
-}
-.edit_customer_page > #labels > #surname> ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0 20px 10px 25px;
-}
-.edit_customer_page > #labels > #surname > ul > .label{
-    grid-area: userlabel;
-}
-.edit_customer_page > #labels > #surname > ul > .input{
-    grid-area: userinput;
-}
-
-/*address*/
-.edit_customer_page > #labels > #address {
-    grid-area: c;
-}
-.edit_customer_page > #labels > #address> ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0 20px 10px 25px;
-}
-.edit_customer_page > #labels > #address > ul > .label{
-    grid-area: userlabel;
-}
-.edit_customer_page > #labels > #address > ul > .input{
-    grid-area: userinput;
-}
-
-/*city*/
-.edit_customer_page > #labels > #city {
-    grid-area: d;
-}
-.edit_customer_page > #labels > #city> ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0 20px 10px 25px;
-}
-.edit_customer_page > #labels > #city > ul > .label{
-    grid-area: userlabel;
-}
-.edit_customer_page > #labels > #city > ul > .input{
-    grid-area: userinput;
-}
-
-/*province*/
-.edit_customer_page > #labels > #province {
-    grid-area: e;
-}
-.edit_customer_page > #labels > #province> ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0 20px 10px 25px;
-}
-.edit_customer_page > #labels > #province > ul > .label{
-    grid-area: userlabel;
-}
-.edit_customer_page > #labels > #province > ul > .input{
-    grid-area: userinput;
-}
-
-/*email*/
-.edit_customer_page > #labels > #email {
-    grid-area: f;
-}
-.edit_customer_page > #labels > #email> ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0 20px 10px 25px;
-}
-.edit_customer_page > #labels > #email > ul > .label{
-    grid-area: userlabel;
-}
-.edit_customer_page > #labels > #email > ul > .input{
-    grid-area: userinput;
-}
-
-/*contact*/
-.edit_customer_page > #labels > #contact {
-    grid-area: g;
-}
-.edit_customer_page > #labels > #contact> ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0 20px 10px 25px;
-}
-.edit_customer_page > #labels > #contact > ul > .label{
-    grid-area: userlabel;
-}
-.edit_customer_page > #labels > #contact > ul > .input{
-    grid-area: userinput;
-}
-
-/*buttons*/
-.edit_customer_page > #labels > #button1 {
-    grid-area: button1;
-    padding: 20px 20px 20px 25px;
-}
-.edit_customer_page > #labels > #button2 {
-    grid-area: button2;
-    padding: 20px 20px 20px 25px;
-}
-/* ^ EDIT CUSTOMER DETAILS PAGE ^ */
-
-/* V UPDATED CUSTOMERS DETAILS PAGE V */
-/*grid for main*/
-.Customer_1_Page_UPDATE {
-    color: white;
-    display: grid; 
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 2;
-    gap: 0px 0px;  
-    grid-template-areas: 
-      "header order"
-      "gdetails odetails"; 
-}
-
-.Customer_1_Page_UPDATE > header {
-    background-color: #707251;
-    grid-area: header;
-    padding: 20px;
-    margin:20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-}
-
-/* grid for header */
-.Customer_1_Page_UPDATE > header {
-    color: white;
-    display: grid; 
-    grid-template-columns: auto 1fr 1fr; 
-    grid-template-rows: 1; 
-    grid-template-areas: 
-      "head button button"; 
-}
-
-.Customer_1_Page_UPDATE > header > h1{
-    grid-area: head;
-    padding: 0 0 0 10px;
-}
-
-.Customer_1_Page_UPDATE > header > #options{
-    grid-area: button;
-    text-align: center;
-    padding: 30px 0 0 50px;
-}
-
-.Customer_1_Page_UPDATE > #details {
-    grid-area: gdetails;
-}
-
-/* grid for details */
-.Customer_1_Page_UPDATE > #details > ul{
-    grid-area: gdetails;
-    margin: 0 20px 56.5px 20px;
-    padding: 20px;
-    display: grid;
-    background-color: #9F9D56; 
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 5;
-    gap: 0px 0px;  
-    grid-template-areas: 
-      "update update"
-      "label1 detail1"
-      "label2 detail2"
-      "label3 detail3"
-      "label4 detail4";
-    list-style-type: none;
-}
-
-/* updated */
-.Customer_1_Page_UPDATE > #details > ul > #update {
-    grid-area: update;
-    padding: 0 0 0 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    text-align: left;
-}
-
-/* row 1 */
-.Customer_1_Page_UPDATE > #details > ul > #label1 {
-    grid-area: label1;
-    padding: 0 0 0 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-}
-.Customer_1_Page_UPDATE > #details > ul > #address {
-    grid-area: detail1;
-    padding: 0 0 0 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-}
-
-/* row 2 */
-.Customer_1_Page_UPDATE > #details > ul > #label2 {
-    grid-area: label2;
-    padding: 0 0 0 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-}
-.Customer_1_Page_UPDATE > #details > ul > #city_province {
-    grid-area: detail2;
-    padding: 0 0 0 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-}
-
-/* row 3 */
-.Customer_1_Page_UPDATE > #details > ul > #label3 {
-    grid-area: label3;
-    padding: 0 0 0 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-}
-.Customer_1_Page_UPDATE > #details > ul > #email {
-    grid-area: detail3;
-    padding: 0 0 0 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-}
-
-/* row 4 */
-.Customer_1_Page_UPDATE > #details > ul > #label4 {
-    grid-area: label4;
-    padding: 0 0 0 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-}
-.Customer_1_Page_UPDATE > #details > ul > #contact {
-    grid-area: detail4;
-    padding: 0 0 0 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-}
-
-/*order transactions*/
-.Customer_1_Page_UPDATE > #orderlabel {
-    background-color: #707251;
-    grid-area: order;
-    padding: 26.5px 20px 26.5px 30px;
-    margin: 0 20px 0 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-}
-
-.Customer_1_Page_UPDATE > #c1order {
-    background-color: #9F9D56;
-    list-style-type: none;
-    grid-area: odetails;
-    margin: 0 20px 220px 20px;
-    font-family: 'Inter', sans-serif;
-}
-
-/*order transactions grid*/
-.Customer_1_Page_UPDATE > #c1order {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1; 
-    grid-template-areas: 
-      "left right"; 
-}
-
-.Customer_1_Page_UPDATE > #c1order > #left,#right{
-    list-style-type: none;
-}
-
-/*order transactions left grid*/
-.Customer_1_Deletion > #c1order > #left{
-    grid-area: left;
-    margin: 20px;
-    display: grid;
-    grid-template-columns: auto; 
-    grid-template-rows: 3; 
-    grid-template-areas: 
-      "a"
-      "b"
-      "c"; 
-}
-
-.Customer_1_Page_UPDATE > #c1order > #left > .orderlabel {
-    grid-area: a;
-    font-weight: 300;
-}
-
-.Customer_1_Page_UPDATE > #c1order > #left > .order1 {
-    grid-area: b;
-    font-weight: 200;
-}
-
-.Customer_1_Page_UPDATE > #c1order > #left > .order2 {
-    grid-area: c;
-    font-weight: 200;
-}
-
-/*order transactions right grid*/
-.Customer_1_Page_UPDATE > #c1order > #right{
-    grid-area: right;
-    margin: 20px;
-    display: grid;
-    grid-template-columns: auto; 
-    grid-template-rows: 3; 
-    grid-template-areas: 
-      "a"
-      "b"
-      "c"; 
-}
-
-.Customer_1_Page_UPDATE > #c1order > #right > .orderlabel {
-    grid-area: a;
-    font-weight: 300;
-}
-
-.Customer_1_Page_UPDATE > #c1order > #right > .order1 {
-    grid-area: b;
-    font-weight: 200;
-}
-
-.Customer_1_Page_UPDATE > #c1order > #right > .order2 {
-    grid-area: c;
-    font-weight: 200;
-}
-
-.Customer_1_Page_UPDATE > #c1order > #button1 {
-    grid-area: button1;
-    padding: 34px 20px;
-    text-align: center;
-}
-/* ^ UPDATED CUSTOMER DETAILS PAGE ^ */
-
-/* ^ CONFIRM CUSTOMER DELETION PAGE ^ */
-.Customer_1_Deletion {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 2;
-    grid-template-areas: 
-      "top"
-      "center";
-    align-items: center;
-    justify-content: center;
-}
-
-.Customer_1_Deletion > header {
-    background-color: #707251;
-    grid-area: top;
-    padding: 20px 40px 20px 40px;
-    margin:20px 0 0 0;
-    text-align: center;
-    color: white;
-}
-
-.Customer_1_Deletion > header > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-
-.Customer_1_Deletion > #details {
-    background-color: #9F9D56;
-    grid-area: center;
-    padding: 0 20px 40px 20px;
-    margin:20px 0 0 0;
-    text-align: center;
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
-
-.Customer_1_Deletion > #details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3;
-    grid-template-areas: 
-      "head head"
-      "button1 button2";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-
-/*label*/
-.Customer_1_Deletion > #details > #label {
-    grid-area: head;
-    font-weight: 300;
-    text-align: center;
-}
-
-/*no*/
-.Customer_1_Deletion > #details > #no {
-    grid-area: button1;
-}
-
-/*yes*/
-.Customer_1_Deletion > #details > #yes {
-    grid-area: button2;
-}
-/* ^ CONFIRM CUSTOMER DELETION PAGE ^ */
-
-/* ^ CUSTOMER DELETED PAGE ^ */
-.Customer_1_Deleted {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 2;
-    grid-template-areas: 
-      "top"
-      "center";
-    align-items: center;
-    justify-content: center;
-}
-
-.Customer_1_Deleted > header {
-    background-color: #707251;
-    grid-area: top;
-    padding: 20px 40px 20px 40px;
-    margin:20px 0 0 0;
-    text-align: center;
-    color: white;
-}
-
-.Customer_1_Deleted > header > h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-
-.Customer_1_Deleted > #details {
-    background-color: #9F9D56;
-    grid-area: center;
-    padding: 0 20px 40px 20px;
-    margin:20px 0 0 0;
-    text-align: center;
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
-
-.Customer_1_Deleted > #details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2;
-    grid-template-areas: 
-      "head head"
-      "button button";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-
-/*label*/
-.Customer_1_Deleted > #details > #label {
-    grid-area: head;
-    font-weight: 300;
-    text-align: center;
-}
-
-/*continue*/
-.Customer_1_Deleted > #details > #continue {
-    grid-area: button;
-}
-/* ^ CUSTOMER DELETED PAGE ^ */
-
-
-
-
-
-
-
-
-
-
-
-
+/* ^ CUSTOMERS PAGE ^ */
 
 /* FOOD RELATED PAGES */
 
@@ -1802,7 +1217,7 @@ footer > p{
     background-color: #9F9D56;
     grid-area: center;
     padding: 20px;
-    margin:0 20px 20px 20px;
+    margin:20px;
     text-align: center;
     color: white;
     font-family: 'Inter', sans-serif;
@@ -2583,7 +1998,7 @@ footer > p{
     background-color: #9F9D56;
     grid-area: center;
     padding: 20px;
-    margin:0 20px 20px 20px;
+    margin:20px;
     text-align: center;
     color: white;
     font-family: 'Inter', sans-serif;
@@ -2599,7 +2014,7 @@ footer > p{
       "a a"
       "b b"
       "c c"
-      "button button";
+      "space button";
     align-items: center;
     justify-content: center;
     list-style-type: none;
@@ -2617,17 +2032,14 @@ footer > p{
     grid-template-areas: 
       "userlabel userinput";
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     list-style-type: none;
-    padding: 10px 20px 10px 25px;
 }
 .add_order_page > #labels > #ordername > ul > .label{
     grid-area: userlabel;
-    justify-content: start;
 }
 .add_order_page > #labels > #ordername > ul > .input{
     grid-area: userinput;
-    justify-content: end;
 }
 
 /*foodorder*/
@@ -2642,17 +2054,14 @@ footer > p{
     grid-template-areas: 
       "userlabel userinput";
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     list-style-type: none;
-    padding: 0 20px 10px 25px;
 }
 .add_order_page > #labels > #foodorder > ul > .label{
     grid-area: userlabel;
-    justify-content: start;
 }
 .add_order_page > #labels > #foodorder > ul > .input{
     grid-area: userinput;
-    justify-content: end;
 }
 
 /*quantity*/
@@ -2667,23 +2076,19 @@ footer > p{
     grid-template-areas: 
       "userlabel userinput";
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     list-style-type: none;
-    padding: 0 20px 10px 25px;
 }
 .add_order_page > #labels > #quantity > ul > .label{
     grid-area: userlabel;
-    justify-content: start;
 }
 .add_order_page > #labels > #quantity > ul > .input{
     grid-area: userinput;
-    justify-content: end;
 }
 
 /*button*/
 .add_order_page > #labels > #button {
     grid-area: button;
-    padding: 0 20px 10px 25px;
 }
 /* ^ ADD ORDERS PAGE ^ */
 
@@ -3252,7 +2657,7 @@ footer > p{
 }
 
 footer {
-    position: static;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 60px;
@@ -3263,15 +2668,9 @@ footer {
 
 #absolute_footer {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    padding: 30px 0 30px 0;
-    margin: 0;
 }
 
-footer,#fixed_footer > p {
+footer > p {
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 200;
