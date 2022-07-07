@@ -221,7 +221,7 @@ footer > p{
 
 .signin_page > #user_n_pass {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 3;
     grid-template-areas: 
       "user user"
@@ -239,19 +239,19 @@ footer > p{
 .signin_page > #user_n_pass > #username > ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .signin_page > #user_n_pass > #username > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .signin_page > #user_n_pass > #username > ul > .userinput{
     grid-area: userinput;
+    text-align: right;
 }
 
 /*password*/
@@ -261,19 +261,19 @@ footer > p{
 .signin_page > #user_n_pass > #password > ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
-.signin_page > #user_n_pass > #username > ul > .label{
+.signin_page > #user_n_pass > #password > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
-.signin_page > #user_n_pass > #username > ul > .userinput{
+.signin_page > #user_n_pass > #password > ul > .userinput{
     grid-area: userinput;
+    text-align: right;
 }
 
 /*button*/
@@ -1521,13 +1521,19 @@ footer > p{
     display: grid;
     grid-gap: 0 30px;
     grid-template-columns: auto;
-    grid-template-rows: 2;
+    grid-template-rows: 3;
     grid-template-areas: 
+      "pic"
       "top"
       "button";
     align-items: center;
     justify-content: center;
     list-style-type: none;
+}
+
+/*pic*/
+.Customer > #details > #picture {
+    grid-area: pic;
 }
 
 /*label*/
@@ -2499,13 +2505,19 @@ footer > p{
     display: grid;
     grid-gap: 0 30px;
     grid-template-columns: auto;
-    grid-template-rows: 2;
-    grid-template-areas: 
+    grid-template-rows: 3;
+    grid-template-areas:
+      "pic" 
       "top"
       "button";
     align-items: center;
     justify-content: center;
     list-style-type: none;
+}
+
+/*pic*/
+.Food > #details > #picture {
+    grid-area: pic;
 }
 
 /*label*/
@@ -3570,13 +3582,19 @@ footer > p{
     display: grid;
     grid-gap: 0 30px;
     grid-template-columns: auto;
-    grid-template-rows: 2;
-    grid-template-areas: 
+    grid-template-rows: 3;
+    grid-template-areas:
+      "pic" 
       "top"
       "button";
     align-items: center;
     justify-content: center;
     list-style-type: none;
+}
+
+/*pic*/
+.Order_1_Deleted > #details > #picture {
+    grid-area: pic;
 }
 
 /*label*/
@@ -3618,10 +3636,6 @@ footer {
     background-color: white;
     padding: 30px 0 30px 0;
     margin: 0;
-}
-
-#absolute_footer {
-    position: absolute;
 }
 
 footer > p {
