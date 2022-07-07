@@ -1444,6 +1444,71 @@ footer > p{
 }
 /* ^ CONFIRM CUSTOMER DELETE PAGE ^ */
 
+/* V DELETED CUSTOMER PAGE V */
+.Customer_1_Deleted {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+    margin:0 20px 20px 20px;
+    padding: 0 20px 0 20px;
+}
+
+.Customer_1_Deleted > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.Customer_1_Deleted > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Customer_1_Deleted > #details {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:0 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.Customer_1_Deleted > #details {
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "button";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*label*/
+.Customer_1_Deleted > #details > #label {
+    grid-area: top;
+    font-weight: 300;
+}
+
+/*button*/
+.Customer_1_Deleted > #details > #continue {
+    grid-area: button;
+}
+/* ^ DELETED CUSTOMER PAGE ^ */
+
 
 
 
@@ -2335,6 +2400,71 @@ footer > p{
     grid-area: button2;
 }
 /* ^ CONFIRM FOOD DELETE PAGE ^ */
+
+/* V DELETED FOOD PAGE V */
+.Food_1_Deleted {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+    margin:0 20px 20px 20px;
+    padding: 0 20px 0 20px;
+}
+
+.Food_1_Deleted > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.Food_1_Deleted > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Food_1_Deleted > #details {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:0 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.Food_1_Deleted > #details {
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "button";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*label*/
+.Food_1_Deleted > #details > #label {
+    grid-area: top;
+    font-weight: 300;
+}
+
+/*button*/
+.Food_1_Deleted > #details > #continue {
+    grid-area: button;
+}
+/* ^ DELETED FOOD PAGE ^ */
 
 
 
@@ -3312,6 +3442,73 @@ footer > p{
     grid-area: button2;
 }
 /* ^ CONFIRM ORDER DELETE PAGE ^ */
+
+/* V DELETED ORDER PAGE V */
+.Order_1_Deleted {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+    margin:0 20px 20px 20px;
+    padding: 0 20px 0 20px;
+}
+
+.Order_1_Deleted > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.Order_1_Deleted > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Order_1_Deleted > #details {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:0 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.Order_1_Deleted > #details {
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "button";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*label*/
+.Order_1_Deleted > #details > #label {
+    grid-area: top;
+    font-weight: 300;
+}
+
+/*button*/
+.Order_1_Deleted > #details > #continue {
+    grid-area: button;
+}
+/* ^ DELETED ORDER PAGE ^ */
+
+
 
 
 
