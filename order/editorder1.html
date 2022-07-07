@@ -20,34 +20,49 @@
                     <li id="right"><a href="../signin.html">SIGN IN</a></li>
                 </ul>
             </nav>
-            <header>
-                <h1>Editing Order</h1>
-            </header>
             <main class="edit_order_page">
+                <header>
+                    <h1>Editing Order</h1>
+                </header>
                 <section id="labels">
-                    <p>Name
-                    <input type="text" placeholder="" id="order_input">
-                    </p>
-                    <p>Order
-                    <select id="orders">
-                        <optgroup label="Milkshakes">
-                            <option>I Miss You</option>
-                            <option>Salty Sailor</option>
-                            <option>Shook Special</option>
-                        </optgroup>
-                        <optgroup label="Sides">
-                            <option>Chili Cheese Fries</option>
-                            <option>Jalapeno Poppers</option>
-                            <option>Meatball Sub</option>
-                        </optgroup>
-                    </select>
-                    <!-- added this drop down for fun, but we can hardcode an actual order if you want-->
-                    <p>Quantity
-                    <input type="text" placeholder="" id="quantity">
-                    </p>
+                    <section id="ordername">
+                        <ul>
+                            <li class="label">Name</li>
+                            <li class="input"><input type="text" placeholder="" id="order_input"></li>
+                        </ul>
+                    </section>
+                    <section id="foodorder">
+                        <ul>
+                            <li class="label">Order</li>
+                            <li class="drop">
+                                <select id="foodorderlist">
+                                    <optgroup label="Milkshakes">
+                                        <option>I Miss You</option>
+                                        <option>Salty Sailor</option>
+                                        <option>Shook Special</option>
+                                    </optgroup>
+                                    <optgroup label="Sides">
+                                        <option>Chili Cheese Fries</option>
+                                        <option>Jalapeno Poppers</option>
+                                        <option>Meatball Sub</option>
+                                    </optgroup>
+                                </select>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="quantity">
+                        <ul>
+                            <li class="label">Quantity</li>
+                            <li class="input"><input type="text" placeholder="" id="quantity"></li>
+                        </ul>
+                    </section>
+                    <section id="button1">
+                        <a href="order1.html"><button>Cancel Changes</button></a>
+                    </section>
+                    <section id="button2">
+                        <a href="order1updated.html"><button>Confirm Changes</button></a>
+                    </section>
                 </section>
-                <a href="order1.html"><button>Cancel Changes</button></a>
-                <a href="order1.html"><button>Confirm Changes</button></a>
             </main>
             <section class="clear"></section>
             <footer>

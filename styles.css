@@ -1771,7 +1771,7 @@ footer > p{
 }
 /* ^ FOODS PAGE ^ */
 
-/* Add Food Page */
+/* V Add Food Page V */
 .add_food_page {
     display: grid;
     grid-template-columns: auto;
@@ -1813,11 +1813,12 @@ footer > p{
 .add_food_page > #labels {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3;
+    grid-template-rows: 5;
     grid-template-areas: 
       "a a"
       "b b"
       "c c"
+      "d d"
       "space button";
     align-items: center;
     justify-content: center;
@@ -1868,11 +1869,11 @@ footer > p{
     grid-area: userinput;
 }
 
-/*detail*/
-.add_food_page > #labels > #detail {
+/*ingredients*/
+.add_food_page > #labels > #ingredients {
     grid-area: c;
 }
-.add_food_page > #labels > #detail> ul{
+.add_food_page > #labels > #ingredients> ul{
     display: grid;
     grid-gap: 0 30px;
     grid-template-columns: auto auto;
@@ -1883,10 +1884,32 @@ footer > p{
     justify-content: center;
     list-style-type: none;
 }
-.add_food_page > #labels > #detail > ul > .label{
+.add_food_page > #labels > #ingredients > ul > .label{
     grid-area: userlabel;
 }
-.add_food_page > #labels > #detail > ul > .input{
+.add_food_page > #labels > #ingredients > ul > .input{
+    grid-area: userinput;
+}
+
+/*description*/
+.add_food_page > #labels > #description {
+    grid-area: d;
+}
+.add_food_page > #labels > #description> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.add_food_page > #labels > #description > ul > .label{
+    grid-area: userlabel;
+}
+.add_food_page > #labels > #description > ul > .input{
     grid-area: userinput;
 }
 
@@ -1897,6 +1920,7 @@ footer > p{
 .add_food_page > #labelss > #space {
     grid-area: space;
 }
+/* ^ Add Food Page ^ */
 
 /* V FOOD DETAILS PAGE V */
 /*grid for main*/
@@ -2009,6 +2033,286 @@ footer > p{
     font-weight: 200;
 }
 /* ^ FOOD DETAILS PAGE ^ */
+
+/* V Edit Food Page V */
+.edit_food_page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+}
+
+.edit_food_page > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.edit_food_page > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.edit_food_page > #labels {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:0 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.edit_food_page > #labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5;
+    grid-template-areas: 
+      "a a"
+      "b b"
+      "c c"
+      "d d"
+      "button1 button2";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*foodname*/
+.edit_food_page > #labels > #foodname {
+    grid-area: a;
+}
+.edit_food_page > #labels > #foodname> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.edit_food_page > #labels > #foodname > ul > .label{
+    grid-area: userlabel;
+}
+.edit_food_page > #labels > #foodname > ul > .input{
+    grid-area: userinput;
+}
+
+/*price*/
+.edit_food_page > #labels > #price {
+    grid-area: b;
+}
+.edit_food_page > #labels > #price> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.edit_food_page > #labels > #price > ul > .label{
+    grid-area: userlabel;
+}
+.edit_food_page > #labels > #price > ul > .input{
+    grid-area: userinput;
+}
+
+/*ingredients*/
+.edit_food_page > #labels > #ingredients {
+    grid-area: c;
+}
+.edit_food_page > #labels > #ingredients> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.edit_food_page > #labels > #ingredients > ul > .label{
+    grid-area: userlabel;
+}
+.edit_food_page > #labels > #ingredients > ul > .input{
+    grid-area: userinput;
+}
+
+/*description*/
+.edit_food_page > #labels > #description {
+    grid-area: d;
+}
+.edit_food_page > #labels > #description> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.edit_food_page > #labels > #description > ul > .label{
+    grid-area: userlabel;
+}
+.edit_food_page > #labels > #description > ul > .input{
+    grid-area: userinput;
+}
+
+/*button*/
+.edit_food_page > #labels > #button1 {
+    grid-area: button1;
+    padding: 34px 20px;
+}
+.edit_food_page > #labelss > #button2 {
+    grid-area: button2;
+    padding: 34px 20px;
+}
+/* ^ Edit Food Page ^ */
+
+/* V UPDATED FOOD DETAILS PAGE V */
+/*grid for main*/
+.Food_1_update {
+    color: white;
+    display: grid; 
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto; 
+    grid-template-rows: 2;
+    gap: 0px 0px;  
+    grid-template-areas: 
+      "header"
+      "gdetails"; 
+}
+
+.Food_1_update > header {
+    background-color: #707251;
+    grid-area: header;
+    padding: 20px;
+    margin:20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* grid for header */
+.Food_1_update > header {
+    color: white;
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "head head button"; 
+}
+
+.Food_1_update > header > h1{
+    grid-area: head;
+    padding: 0 0 0 10px;
+}
+
+.Food_1_update > header > #options{
+    grid-area: button;
+    text-align: center;
+    padding: 30px 0 0 50px;
+}
+
+.Food_1_update > #details {
+    grid-area: gdetails;
+}
+
+/* grid for details */
+.Food_1_update > #details > ul{
+    grid-area: gdetails;
+    margin: 0 20px 75.5px 20px;
+    padding: 20px;
+    display: grid;
+    background-color: #9F9D56; 
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 5;
+    gap: 0px 0px;  
+    grid-template-areas: 
+      "update space"
+      "label1 detail1"
+      "label2 detail2"
+      "label3 detail3"
+      "label4 detail4";
+    list-style-type: none;
+}
+
+/* update */
+.Food_1_update > #details > ul > #update {
+    grid-area: update;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.Food_1_update > #details > ul > #space {
+    grid-area: space;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* row 1 */
+.Food_1_update > #details > ul > #label1 {
+    grid-area: label1;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.Food_1_update > #details > ul > #price {
+    grid-area: detail1;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* row 2 */
+.Food_1_update > #details > ul > #label2 {
+    grid-area: label2;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.Food_1_update > #details > ul > #ingredients {
+    grid-area: detail2;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* row 3 */
+.Food_1_update > #details > ul > #label3 {
+    grid-area: label3;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.Food_1_update > #details > ul > #description {
+    grid-area: detail3;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+/* ^ UPDATED FOOD DETAILS PAGE ^ */
 
 
 
@@ -2245,8 +2549,10 @@ footer > p{
     padding: 34px 20px;
     text-align: center;
 }
+/* ^ ORDERS PAGE ^ */
 
-/* ADD ORDERS PAGE */
+
+/* V ADD ORDERS PAGE V */
 .add_order_page {
     display: grid;
     grid-template-columns: auto;
@@ -2379,7 +2685,7 @@ footer > p{
     grid-area: button;
     padding: 0 20px 10px 25px;
 }
-/* ^ CUSTOMERS PAGE ^ */
+/* ^ ADD ORDERS PAGE ^ */
 
 /* V ORDER DETAILS PAGE V */
 /*grid for main*/
@@ -2576,6 +2882,356 @@ footer > p{
     font-weight: 200;
 }
 /* ^ ORDER DETAILS PAGE ^ */
+
+/* V EDIT ORDERS PAGE V */
+.edit_order_page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+}
+
+.edit_order_page > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.edit_order_page > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.edit_order_page > #labels {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:0 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.edit_order_page > #labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    grid-template-areas: 
+      "a a"
+      "b b"
+      "c c"
+      "button1 button2";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*ordername*/
+.edit_order_page > #labels > #ordername {
+    grid-area: a;
+}
+.edit_order_page > #labels > #ordername> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: start;
+    list-style-type: none;
+    padding: 10px 20px 10px 25px;
+}
+.edit_order_page > #labels > #ordername > ul > .label{
+    grid-area: userlabel;
+    justify-content: start;
+}
+.edit_order_page > #labels > #ordername > ul > .input{
+    grid-area: userinput;
+    justify-content: end;
+}
+
+/*foodorder*/
+.edit_order_page > #labels > #foodorder {
+    grid-area: b;
+}
+.edit_order_page > #labels > #foodorder > ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: start;
+    list-style-type: none;
+    padding: 0 20px 10px 25px;
+}
+.edit_order_page > #labels > #foodorder > ul > .label{
+    grid-area: userlabel;
+    justify-content: start;
+}
+.edit_order_page > #labels > #foodorder > ul > .drop{
+    grid-area: userinput;
+    justify-content: end;
+}
+
+/*quantity*/
+.edit_order_page > #labels > #quantity {
+    grid-area: c;
+}
+.edit_order_page > #labels > #quantity> ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: start;
+    list-style-type: none;
+    padding: 0 20px 10px 25px;
+}
+.edit_order_page > #labels > #quantity > ul > .label{
+    grid-area: userlabel;
+    justify-content: start;
+}
+.edit_order_page > #labels > #quantity > ul > .input{
+    grid-area: userinput;
+    justify-content: end;
+}
+
+/*button*/
+.edit_order_page > #labels > #button1 {
+    grid-area: button1;
+    padding: 0 20px 10px 25px;
+}
+.edit_order_page > #labels > #button2 {
+    grid-area: button2;
+    padding: 0 20px 10px 25px;
+}
+/* ^ EDIT ORDERS PAGE ^ */
+
+/* V UPDATED ORDER DETAILS PAGE V */
+/*grid for main*/
+.Order_1_update {
+    color: white;
+    display: grid; 
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 2;
+    gap: 0px 0px;  
+    grid-template-areas: 
+      "header order"
+      "gdetails odetails"; 
+}
+
+.Order_1_update > header {
+    background-color: #707251;
+    grid-area: header;
+    padding: 20px;
+    margin:20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* grid for header */
+.Order_1_update > header {
+    color: white;
+    display: grid; 
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "head button button"; 
+}
+
+.Order_1_update > header > h1{
+    grid-area: head;
+    padding: 0 0 0 10px;
+}
+
+.Order_1_update > header > #options{
+    grid-area: button;
+    text-align: center;
+    padding: 30px 0 0 50px;
+}
+
+.Order_1_update > #details1 {
+    grid-area: gdetails;
+}
+
+/* grid for details */
+.Order_1_update > #details1 > ul{
+    grid-area: gdetails;
+    margin: 0 20px 220px 20px;
+    padding: 20px;
+    display: grid;
+    background-color: #9F9D56; 
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 3;
+    gap: 0px 0px;  
+    grid-template-areas: 
+      "update space"
+      "label1 detail1"
+      "label2 detail2";
+    list-style-type: none;
+}
+
+/* update */
+.Order_1_update > #details1 > ul > #update {
+    grid-area: update;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.Order_1_update > #details1 > ul > #space {
+    grid-area: space;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* row 1 */
+.Order_1_update > #details1 > ul > #label1 {
+    grid-area: label1;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.Order_1_update > #details1 > ul > #date {
+    grid-area: detail1;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* row 2 */
+.Order_1_update > #details1 > ul > #label2 {
+    grid-area: label2;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.Order_1_update > #details1 > ul > #name {
+    grid-area: detail2;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/*order transactions*/
+.Order_1_update > #summary {
+    background-color: #707251;
+    grid-area: order;
+    padding: 26.5px 20px 26.5px 30px;
+    margin: 0 20px 0 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.Order_1_update > #details2 {
+    background-color: #9F9D56;
+    list-style-type: none;
+    grid-area: odetails;
+    font-family: 'Inter', sans-serif;
+    padding: 26.5px 20px 26.5px 0px;
+    margin: 0 20px 147.5px 20px;
+}
+
+/*order summary grid*/
+.Order_1_update > #details2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 2; 
+    grid-template-areas: 
+      "up up"
+      "down down"; 
+}
+
+.Order_1_update > #details2 > #row1,#net{
+    list-style-type: none;
+}
+
+/*order summary upper grid*/
+.Order_1_update > #details2 > #row1{
+    grid-area: up;
+    text-align: left;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 2; 
+    grid-template-areas: 
+      "label1 label2 label3"
+      "food1 amount1 price1"; 
+}
+
+/*labels*/
+.Order_1_update > #details2 > #row1 > #label1 {
+    grid-area: label1;
+    font-weight: 400;
+}
+
+.Order_1_update > #details2 > #row1 > #label2 {
+    grid-area: label2;
+    font-weight: 400;
+}
+
+.Order_1_update > #details2 > #row1 > #label3 {
+    grid-area: label3;
+    font-weight: 400;
+}
+
+/*row1*/
+.Order_1_update > #details2 > #row1 > #food1 {
+    grid-area: food1;
+    font-weight: 200;
+}
+
+.Order_1_update > #details2 > #row1 > #amount1 {
+    grid-area: amount1;
+    font-weight: 200;
+}
+
+.Order_1_update > #details2 > #row1 > #price1 {
+    grid-area: price1;
+    font-weight: 200;
+}
+
+/*order summary lower grid*/
+.Order_1_update > #details2 > #net{
+    grid-area: down;
+    margin: 40px 0 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "label label total"; 
+}
+
+/*labels*/
+.Order_1_update > #details2 > #net > #label {
+    grid-area: label;
+    font-weight: 400;
+}
+
+.Order_1_update > #details2 > #net > #totalamount {
+    grid-area: total;
+    font-weight: 200;
+}
+/* ^ UPDATED ORDER DETAILS PAGE ^ */
 
 
 
