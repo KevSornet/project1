@@ -196,7 +196,7 @@ footer > p{
     background-color: #707251;
     grid-area: top;
     padding: 20px;
-    margin:20px;
+    margin:20px 20px 0 20px;
     text-align: center;
     color: white;
 }
@@ -318,7 +318,7 @@ footer > p{
     grid-template-columns: auto 1fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
-      "head button button"; 
+      "head head button"; 
 }
 
 .customers_page > header > h1{
@@ -328,8 +328,8 @@ footer > p{
 
 .customers_page > header > #addcustomer{
     grid-area: button;
-    align-items: center;
-    padding: 30px 0 0 50px;
+    text-align: right;
+    padding: 30px 30px 0 50px;
 }
 
 .customers_page > #customer_button {
@@ -342,12 +342,52 @@ footer > p{
 /* grid for customer and button section */
 .customers_page > #customer_button {
     display: grid; 
-    grid-template-columns: auto 1fr 1fr; 
-    grid-template-rows: 3; 
+    grid-template-columns: auto 2fr 1fr; 
+    grid-template-rows: 4; 
     grid-template-areas: 
+      "labels space space"
       "info1 button1 button1"
       "info2 button2 button2"
       "info3 button3 button3"; 
+    font-weight: 400;
+}
+
+/* space */
+.customers_page > #customer_button > #space {
+    grid-area: space;
+}
+
+/* labels */
+.customers_page > #customer_button > #labels {
+    grid-area: labels;
+    padding: 0px 50px 0 20px;
+    text-align: left;
+}
+
+/* grid for labels */
+.customers_page > #customer_button > #labels > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+}
+
+.customers_page > #customer_button > #labels > ul > .name {
+    grid-area: a;
+    text-align: left;
+}
+
+.customers_page > #customer_button > #labels > ul > .address {
+    grid-area: b;
+    text-align: left;
+}
+
+.customers_page > #customer_button > #labels > ul > .contact {
+    grid-area: c;
+    text-align: left;
 }
 
 /* row 1 */
@@ -361,27 +401,25 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto 2fr auto; 
+    grid-template-columns: 1fr 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b c"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .customers_page > #customer_button > #info1 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #info1 >  ul > .address {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #info1 >  ul > .number {
     grid-area: c;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #button1 {
@@ -401,27 +439,25 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto 2fr auto; 
+    grid-template-columns: 1fr 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b c"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .customers_page > #customer_button > #info2 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #info2 >  ul > .address {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #info2 >  ul > .number {
     grid-area: c;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #button2 {
@@ -441,27 +477,25 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto 2fr auto; 
+    grid-template-columns: 1fr 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b c"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .customers_page > #customer_button > #info3 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #info3 >  ul > .address {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #info3 >  ul > .number {
     grid-area: c;
-    place-self: center;
+    text-align: left;
 }
 
 .customers_page > #customer_button > #button3 {
@@ -1550,7 +1584,7 @@ footer > p{
     grid-template-columns: auto 1fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
-      "head button button"; 
+      "head head button"; 
 }
 
 .foods_page > header > h1{
@@ -1560,8 +1594,8 @@ footer > p{
 
 .foods_page > header > #options{
     grid-area: button;
-    align-items: center;
-    padding: 30px 0 0 50px;
+    text-align: right;
+    padding: 30px 30px 0 50px;
 }
 
 .foods_page > #food_list {
@@ -1574,9 +1608,10 @@ footer > p{
 /* grid for customer and button section */
 .foods_page > #food_list {
     display: grid; 
-    grid-template-columns: auto 1fr 1fr; 
+    grid-template-columns: auto auto auto; 
     grid-template-rows: 6; 
-    grid-template-areas: 
+    grid-template-areas:
+      "labels space space" 
       "info1 button1 button1"
       "info2 button2 button2"
       "info3 button3 button3"
@@ -1584,6 +1619,39 @@ footer > p{
       "info5 button5 button5"
       "info6 button6 button6"; 
 }
+
+/* labels */
+.foods_page > #food_list > #space {
+    grid-area: space;
+}
+
+/* labels */
+.foods_page > #food_list > #labels {
+    grid-area: labels;
+    padding: 20px 50px 0 20px;
+}
+
+/* grid for labels */
+.foods_page > #food_list > #labels > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b"; 
+}
+
+.foods_page > #food_list > #labels > ul > .name {
+    grid-area: a;
+    text-align: left;
+}
+
+.foods_page > #food_list > #labels >  ul > .price {
+    grid-area: b;
+    text-align: left;
+}
+
 
 /* row 1 */
 .foods_page > #food_list > #info1 {
@@ -1595,22 +1663,20 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto; 
+    grid-template-columns: 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .foods_page > #food_list > #info1 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #info1 >  ul > .price {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #button1 {
@@ -1629,22 +1695,20 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto; 
+    grid-template-columns: 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .foods_page > #food_list > #info2 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #info2 >  ul > .price {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #button2 {
@@ -1663,22 +1727,20 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto; 
+    grid-template-columns: 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .foods_page > #food_list > #info3 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #info3 >  ul > .price {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #button3 {
@@ -1697,22 +1759,20 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto; 
+    grid-template-columns: 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .foods_page > #food_list > #info4 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #info4 >  ul > .price {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #button4 {
@@ -1731,22 +1791,20 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto; 
+    grid-template-columns: 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .foods_page > #food_list > #info5 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #info5 >  ul > .price {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #button5 {
@@ -1765,22 +1823,20 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto; 
+    grid-template-columns: 2fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .foods_page > #food_list > #info6 > ul > .name {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #info6 >  ul > .price {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .foods_page > #food_list > #button6 {
@@ -2496,7 +2552,7 @@ footer > p{
 .orders_page > header {
     background-color: #707251;
     grid-area: header;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     margin:20px 0 20px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -2509,7 +2565,7 @@ footer > p{
     grid-template-columns: auto 1fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
-      "head button button"; 
+      "head head button"; 
 }
 
 .orders_page > header > h1{
@@ -2519,8 +2575,8 @@ footer > p{
 
 .orders_page > header > #options{
     grid-area: button;
-    align-items: center;
-    padding: 30px 0 0 50px;
+    text-align: right;
+    padding: 30px 30px 0 50px;
 }
 
 .orders_page > #order_list {
@@ -2533,13 +2589,52 @@ footer > p{
 /* grid for customer and button section */
 .orders_page > #order_list {
     display: grid; 
-    grid-template-columns: auto 1fr 1fr; 
-    grid-template-rows: 4; 
+    grid-template-columns: auto 2fr 1f; 
+    grid-template-rows: 5; 
     grid-template-areas: 
+      "labels space space"
       "info1 button1 button1"
       "info2 button2 button2"
       "info3 button3 button3"
       "info4 button4 button4"; 
+}
+
+/* space */
+.orders_page > #order_list > #space {
+    grid-area: space;
+    padding: 20px 50px 0 20px;
+}
+
+/* labels */
+.orders_page > #order_list > #labels {
+    grid-area: labels;
+    padding: 20px 50px 0 20px;
+}
+
+/* grid for labels */
+.orders_page > #order_list > #labels > ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1; 
+    grid-template-areas: 
+      "a b c"; 
+}
+
+.orders_page > #order_list > #labels > ul > .orderno {
+    grid-area: a;
+    text-align: left;
+}
+
+.orders_page > #order_list > #labels >  ul > .name {
+    grid-area: b;
+    text-align: left;
+}
+
+.orders_page > #order_list > #labels >  ul > .date {
+    grid-area: c;
+    text-align: left;
 }
 
 /* row 1 */
@@ -2553,27 +2648,25 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto 2fr auto; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b c"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .orders_page > #order_list > #info1 > ul > .orderno {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #info1 >  ul > .name {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #info1 >  ul > .date {
     grid-area: c;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #button1 {
@@ -2593,27 +2686,25 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto 2fr auto; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b c"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .orders_page > #order_list > #info2 > ul > .orderno {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #info2 >  ul > .name {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #info2 >  ul > .date {
     grid-area: c;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #button2 {
@@ -2633,27 +2724,25 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto 2fr auto; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b c"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .orders_page > #order_list > #info3 > ul > .orderno {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #info3 >  ul > .name {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #info3 >  ul > .date {
     grid-area: c;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #button3 {
@@ -2673,27 +2762,25 @@ footer > p{
     list-style-type: none;
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto 2fr auto; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1; 
     grid-template-areas: 
       "a b c"; 
-    justify-items: center;
-    align-items: center;
 }
 
 .orders_page > #order_list > #info4 > ul > .orderno {
     grid-area: a;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #info4 >  ul > .name {
     grid-area: b;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #info4 >  ul > .date {
     grid-area: c;
-    place-self: center;
+    text-align: left;
 }
 
 .orders_page > #order_list > #button4 {
