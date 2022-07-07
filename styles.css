@@ -1202,7 +1202,7 @@ footer > p{
     grid-template-rows: 5;
     gap: 0px 0px;  
     grid-template-areas: 
-      "update update"
+      "update space"
       "label1 detail1"
       "label2 detail2"
       "label3 detail3"
@@ -1213,6 +1213,13 @@ footer > p{
 /* updated */
 .Customer_1_Page_UPDATE > #details > ul > #update {
     grid-area: update;
+    padding: 0 0 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+.Customer_1_Page_UPDATE > #details > ul > #space {
+    grid-area: space;
     padding: 0 0 0 0;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -1368,6 +1375,112 @@ footer > p{
     text-align: center;
 }
 /* ^ UPDATED CUSTOMER DETAILS PAGE ^ */
+
+/* V CONFIRM CUSTOMER DELETE PAGE V */
+.signin_page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+}
+
+.signin_page > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.signin_page > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.signin_page > #user_n_pass {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.signin_page > #user_n_pass {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    grid-template-areas: 
+      "user user"
+      "pass pass"
+      "space button";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*username*/
+.signin_page > #user_n_pass > #username {
+    grid-area: user;
+}
+.signin_page > #user_n_pass > #username > ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.signin_page > #user_n_pass > #username > ul > .label{
+    grid-area: userlabel;
+}
+.signin_page > #user_n_pass > #username > ul > .userinput{
+    grid-area: userinput;
+}
+
+/*password*/
+.signin_page > #user_n_pass > #password {
+    grid-area: pass;
+}
+.signin_page > #user_n_pass > #password > ul{
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1;
+    grid-template-areas: 
+      "userlabel userinput";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.signin_page > #user_n_pass > #username > ul > .label{
+    grid-area: userlabel;
+}
+.signin_page > #user_n_pass > #username > ul > .userinput{
+    grid-area: userinput;
+}
+
+/*button*/
+.signin_page > #user_n_pass > #button {
+    grid-area: button;
+}
+.signin_page > #user_n_pass > #space {
+    grid-area: space;
+}
+/* ^ CONFIRM CUSTOMER DELETE PAGE ^ */
+
 
 
 
