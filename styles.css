@@ -546,7 +546,7 @@ footer > p{
 
 .add_customers_page > #labels {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 7;
     grid-template-areas: 
       "a a"
@@ -557,8 +557,6 @@ footer > p{
       "f f"
       "g g"
       "space button";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 
@@ -569,19 +567,19 @@ footer > p{
 .add_customers_page > #labels > #firstname> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_customers_page > #labels > #firstname > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_customers_page > #labels > #firstname > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*surname*/
@@ -591,19 +589,19 @@ footer > p{
 .add_customers_page > #labels > #surname> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_customers_page > #labels > #surname > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_customers_page > #labels > #surname > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*address*/
@@ -613,19 +611,19 @@ footer > p{
 .add_customers_page > #labels > #address> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_customers_page > #labels > #address > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_customers_page > #labels > #address > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*city*/
@@ -635,19 +633,19 @@ footer > p{
 .add_customers_page > #labels > #city> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_customers_page > #labels > #city > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_customers_page > #labels > #city > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*province*/
@@ -657,19 +655,19 @@ footer > p{
 .add_customers_page > #labels > #province> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_customers_page > #labels > #province > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_customers_page > #labels > #province > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*email*/
@@ -679,19 +677,19 @@ footer > p{
 .add_customers_page > #labels > #email> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_customers_page > #labels > #email > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_customers_page > #labels > #email > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*contact*/
@@ -701,24 +699,25 @@ footer > p{
 .add_customers_page > #labels > #contact> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
-}
+    }
 .add_customers_page > #labels > #contact > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_customers_page > #labels > #contact > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*button*/
 .add_customers_page > #labels > #button {
     grid-area: button;
+    margin: 20px 0 20px 170px;
 }
 .add_customers_page > #labelss > #space {
     grid-area: space;
@@ -986,7 +985,7 @@ footer > p{
 
 .edit_customer_page > #labels {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 7;
     grid-template-areas: 
       "a a"
@@ -1009,20 +1008,20 @@ footer > p{
 .edit_customer_page > #labels > #firstname> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_customer_page > #labels > #firstname > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_customer_page > #labels > #firstname > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*surname*/
@@ -1032,20 +1031,20 @@ footer > p{
 .edit_customer_page > #labels > #surname> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_customer_page > #labels > #surname > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_customer_page > #labels > #surname > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*address*/
@@ -1055,20 +1054,20 @@ footer > p{
 .edit_customer_page > #labels > #address> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_customer_page > #labels > #address > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_customer_page > #labels > #address > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*city*/
@@ -1078,20 +1077,20 @@ footer > p{
 .edit_customer_page > #labels > #city> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_customer_page > #labels > #city > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_customer_page > #labels > #city > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*province*/
@@ -1101,20 +1100,20 @@ footer > p{
 .edit_customer_page > #labels > #province> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_customer_page > #labels > #province > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_customer_page > #labels > #province > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*email*/
@@ -1124,20 +1123,20 @@ footer > p{
 .edit_customer_page > #labels > #email> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_customer_page > #labels > #email > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_customer_page > #labels > #email > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*contact*/
@@ -1147,20 +1146,20 @@ footer > p{
 .edit_customer_page > #labels > #contact> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_customer_page > #labels > #contact > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_customer_page > #labels > #contact > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*buttons*/
@@ -1887,7 +1886,7 @@ footer > p{
 
 .add_food_page > #labels {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 5;
     grid-template-areas: 
       "a a"
@@ -1895,8 +1894,6 @@ footer > p{
       "c c"
       "d d"
       "space button";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 
@@ -1907,19 +1904,19 @@ footer > p{
 .add_food_page > #labels > #foodname> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_food_page > #labels > #foodname > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_food_page > #labels > #foodname > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*price*/
@@ -1929,19 +1926,19 @@ footer > p{
 .add_food_page > #labels > #price> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_food_page > #labels > #price > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_food_page > #labels > #price > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*ingredients*/
@@ -1951,19 +1948,19 @@ footer > p{
 .add_food_page > #labels > #ingredients> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_food_page > #labels > #ingredients > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_food_page > #labels > #ingredients > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*description*/
@@ -1973,24 +1970,25 @@ footer > p{
 .add_food_page > #labels > #description> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_food_page > #labels > #description > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_food_page > #labels > #description > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*button*/
 .add_food_page > #labels > #button {
     grid-area: button;
+    margin: 20px 0 20px 150px;
 }
 .add_food_page > #labelss > #space {
     grid-area: space;
@@ -2150,7 +2148,7 @@ footer > p{
 
 .edit_food_page > #labels {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 5;
     grid-template-areas: 
       "a a"
@@ -2158,9 +2156,9 @@ footer > p{
       "c c"
       "d d"
       "button1 button2";
+    list-style-type: none;
     align-items: center;
     justify-content: center;
-    list-style-type: none;
 }
 
 /*foodname*/
@@ -2170,19 +2168,19 @@ footer > p{
 .edit_food_page > #labels > #foodname> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .edit_food_page > #labels > #foodname > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_food_page > #labels > #foodname > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*price*/
@@ -2192,19 +2190,19 @@ footer > p{
 .edit_food_page > #labels > #price> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .edit_food_page > #labels > #price > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_food_page > #labels > #price > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*ingredients*/
@@ -2214,19 +2212,19 @@ footer > p{
 .edit_food_page > #labels > #ingredients> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .edit_food_page > #labels > #ingredients > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_food_page > #labels > #ingredients > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*description*/
@@ -2236,29 +2234,29 @@ footer > p{
 .edit_food_page > #labels > #description> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .edit_food_page > #labels > #description > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .edit_food_page > #labels > #description > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*button*/
 .edit_food_page > #labels > #button1 {
     grid-area: button1;
-    padding: 34px 20px;
+    padding: 20px 20px 20px 25px;
 }
 .edit_food_page > #labelss > #button2 {
     grid-area: button2;
-    padding: 34px 20px;
+    padding: 20px 20px 20px 25px;
 }
 /* ^ Edit Food Page ^ */
 
@@ -2832,15 +2830,13 @@ footer > p{
 
 .add_order_page > #labels {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 3;
     grid-template-areas: 
       "a a"
       "b b"
       "c c"
       "space button";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 
@@ -2851,19 +2847,19 @@ footer > p{
 .add_order_page > #labels > #ordername> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_order_page > #labels > #ordername > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_order_page > #labels > #ordername > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*foodorder*/
@@ -2873,19 +2869,19 @@ footer > p{
 .add_order_page > #labels > #foodorder> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_order_page > #labels > #foodorder > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_order_page > #labels > #foodorder > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*quantity*/
@@ -2895,24 +2891,28 @@ footer > p{
 .add_order_page > #labels > #quantity> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
 }
 .add_order_page > #labels > #quantity > ul > .label{
     grid-area: userlabel;
+    text-align: left;
 }
 .add_order_page > #labels > #quantity > ul > .input{
     grid-area: userinput;
+    text-align: left;
 }
 
 /*button*/
 .add_order_page > #labels > #button {
     grid-area: button;
+    margin: 20px 0 20px 150px;
+}
+.add_order_page > #labels > #space {
+    grid-area: space;
 }
 /* ^ ADD ORDERS PAGE ^ */
 
@@ -3153,7 +3153,7 @@ footer > p{
 
 .edit_order_page > #labels {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 3;
     grid-template-areas: 
       "a a"
@@ -3172,7 +3172,7 @@ footer > p{
 .edit_order_page > #labels > #ordername> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
@@ -3183,11 +3183,11 @@ footer > p{
 }
 .edit_order_page > #labels > #ordername > ul > .label{
     grid-area: userlabel;
-    justify-content: start;
+    text-align: left;
 }
 .edit_order_page > #labels > #ordername > ul > .input{
     grid-area: userinput;
-    justify-content: end;
+    text-align: left;
 }
 
 /*foodorder*/
@@ -3197,22 +3197,20 @@ footer > p{
 .edit_order_page > #labels > #foodorder > ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: start;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_order_page > #labels > #foodorder > ul > .label{
     grid-area: userlabel;
-    justify-content: start;
+    text-align: left;
 }
 .edit_order_page > #labels > #foodorder > ul > .drop{
     grid-area: userinput;
-    justify-content: end;
+    text-align: center;
 }
 
 /*quantity*/
@@ -3222,32 +3220,30 @@ footer > p{
 .edit_order_page > #labels > #quantity> ul{
     display: grid;
     grid-gap: 0 30px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     grid-template-areas: 
       "userlabel userinput";
-    align-items: center;
-    justify-content: start;
     list-style-type: none;
     padding: 0 20px 10px 25px;
 }
 .edit_order_page > #labels > #quantity > ul > .label{
     grid-area: userlabel;
-    justify-content: start;
+    text-align: left;
 }
 .edit_order_page > #labels > #quantity > ul > .input{
     grid-area: userinput;
-    justify-content: end;
+    text-align: left;
 }
 
 /*button*/
 .edit_order_page > #labels > #button1 {
     grid-area: button1;
-    padding: 0 20px 10px 25px;
+    padding: 20px 20px 20px 25px;
 }
 .edit_order_page > #labels > #button2 {
     grid-area: button2;
-    padding: 0 20px 10px 25px;
+    padding: 20px 20px 20px 25px;
 }
 /* ^ EDIT ORDERS PAGE ^ */
 
