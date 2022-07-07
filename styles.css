@@ -193,7 +193,7 @@ footer > p{
 }
 
 .signin_page > header {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: top;
     padding: 20px;
     margin:20px 20px 0 20px;
@@ -208,7 +208,7 @@ footer > p{
 }
 
 .signin_page > #user_n_pass {
-    background-color: #9F9D56;
+    background-color: #CAA5A2;
     grid-area: center;
     padding: 20px;
     margin:20px;
@@ -852,7 +852,7 @@ footer > p{
 
 /*order transactions*/
 .Customer_1_Page > #orderlabel {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: order;
     padding: 26.5px 20px 26.5px 30px;
     margin: 0 20px 0 20px;
@@ -861,7 +861,7 @@ footer > p{
 }
 
 .Customer_1_Page > #c1order {
-    background-color: #9F9D56;
+    background-color: #CAA5A2;
     list-style-type: none;
     grid-area: odetails;
     margin: 0 20px 220px 20px;
@@ -1317,7 +1317,7 @@ footer > p{
 
 /*order transactions*/
 .Customer_1_Page_UPDATE > #orderlabel {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: order;
     padding: 26.5px 20px 26.5px 30px;
     margin: 0 20px 0 20px;
@@ -1326,7 +1326,7 @@ footer > p{
 }
 
 .Customer_1_Page_UPDATE > #c1order {
-    background-color: #9F9D56;
+    background-color: #CAA5A2;
     list-style-type: none;
     grid-area: odetails;
     margin: 0 20px 220px 20px;
@@ -2560,7 +2560,7 @@ footer > p{
 }
 
 .orders_page > header {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: header;
     padding: 20px 20px 20px 20px;
     margin:20px 0 20px 0;
@@ -2590,7 +2590,7 @@ footer > p{
 }
 
 .orders_page > #order_list {
-    background-color: #9F9D56;
+    background-color: #CAA5A2;
     color:white;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -2814,7 +2814,7 @@ footer > p{
 }
 
 .add_order_page > header {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: top;
     padding: 20px;
     margin:20px;
@@ -2829,7 +2829,7 @@ footer > p{
 }
 
 .add_order_page > #labels {
-    background-color: #9F9D56;
+    background-color: #CAA5A2;
     grid-area: center;
     padding: 20px;
     margin:20px;
@@ -2944,7 +2944,7 @@ footer > p{
 }
 
 .Order_1_Page > header {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: header;
     padding: 20px;
     margin:20px;
@@ -2983,7 +2983,7 @@ footer > p{
     margin: 0 20px 240px 20px;
     padding: 20px;
     display: grid;
-    background-color: #9F9D56; 
+    background-color: #CAA5A2; 
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr; 
@@ -3137,7 +3137,7 @@ footer > p{
 }
 
 .edit_order_page > header {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: top;
     padding: 20px;
     margin:20px;
@@ -3152,7 +3152,7 @@ footer > p{
 }
 
 .edit_order_page > #labels {
-    background-color: #9F9D56;
+    background-color: #CAA5A2;
     grid-area: center;
     padding: 20px;
     margin:0 20px 20px 20px;
@@ -3275,7 +3275,7 @@ footer > p{
 }
 
 .Order_1_update > header {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: header;
     padding: 20px;
     margin:20px;
@@ -3314,7 +3314,7 @@ footer > p{
     margin: 0 20px 220px 20px;
     padding: 20px;
     display: grid;
-    background-color: #9F9D56; 
+    background-color: #CAA5A2; 
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr; 
