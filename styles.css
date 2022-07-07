@@ -1377,7 +1377,7 @@ footer > p{
 /* ^ UPDATED CUSTOMER DETAILS PAGE ^ */
 
 /* V CONFIRM CUSTOMER DELETE PAGE V */
-.signin_page {
+.Customer_1_Deletion {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 2;
@@ -1386,9 +1386,11 @@ footer > p{
       "center";
     align-items: center;
     justify-content: center;
+    margin:0 20px 20px 20px;
+    padding: 0 20px 0 20px;
 }
 
-.signin_page > header {
+.Customer_1_Deletion > header {
     background-color: #707251;
     grid-area: top;
     padding: 20px;
@@ -1397,87 +1399,48 @@ footer > p{
     color: white;
 }
 
-.signin_page > header > h1 {
+.Customer_1_Deletion > header > h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-align: center;
 }
 
-.signin_page > #user_n_pass {
+.Customer_1_Deletion > #details {
     background-color: #9F9D56;
     grid-area: center;
     padding: 20px;
-    margin:20px;
+    margin:0 20px 20px 20px;
     text-align: center;
     color: white;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
     text-align: center;
 }
 
-.signin_page > #user_n_pass {
+.Customer_1_Deletion > #details {
     display: grid;
+    grid-gap: 0 30px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3;
+    grid-template-rows: 2;
     grid-template-areas: 
-      "user user"
-      "pass pass"
-      "space button";
+      "top top"
+      "button1 button2";
     align-items: center;
     justify-content: center;
     list-style-type: none;
 }
 
-/*username*/
-.signin_page > #user_n_pass > #username {
-    grid-area: user;
-}
-.signin_page > #user_n_pass > #username > ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-.signin_page > #user_n_pass > #username > ul > .label{
-    grid-area: userlabel;
-}
-.signin_page > #user_n_pass > #username > ul > .userinput{
-    grid-area: userinput;
-}
-
-/*password*/
-.signin_page > #user_n_pass > #password {
-    grid-area: pass;
-}
-.signin_page > #user_n_pass > #password > ul{
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1;
-    grid-template-areas: 
-      "userlabel userinput";
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-.signin_page > #user_n_pass > #username > ul > .label{
-    grid-area: userlabel;
-}
-.signin_page > #user_n_pass > #username > ul > .userinput{
-    grid-area: userinput;
+/*label*/
+.Customer_1_Deletion > #details > #label {
+    grid-area: top;
+    font-weight: 300;
 }
 
 /*button*/
-.signin_page > #user_n_pass > #button {
-    grid-area: button;
+.Customer_1_Deletion > #details > #no {
+    grid-area: button1;
 }
-.signin_page > #user_n_pass > #space {
-    grid-area: space;
+.Customer_1_Deletion > #details > #yes {
+    grid-area: button2;
 }
 /* ^ CONFIRM CUSTOMER DELETE PAGE ^ */
 
@@ -2304,6 +2267,74 @@ footer > p{
     font-weight: 200;
 }
 /* ^ UPDATED FOOD DETAILS PAGE ^ */
+
+/* V CONFIRM FOOD DELETE PAGE V */
+.Food_1_Deletion {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+    margin:0 20px 20px 20px;
+    padding: 0 20px 0 20px;
+}
+
+.Food_1_Deletion > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.Food_1_Deletion > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Food_1_Deletion > #details {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:0 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.Food_1_Deletion > #details {
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top top"
+      "button1 button2";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*label*/
+.Food_1_Deletion > #details > #label {
+    grid-area: top;
+    font-weight: 300;
+}
+
+/*button*/
+.Food_1_Deletion > #details > #no {
+    grid-area: button1;
+}
+.Food_1_Deletion > #details > #yes {
+    grid-area: button2;
+}
+/* ^ CONFIRM FOOD DELETE PAGE ^ */
 
 
 
@@ -3214,6 +3245,73 @@ footer > p{
 }
 /* ^ UPDATED ORDER DETAILS PAGE ^ */
 
+/* V CONFIRM ORDER DELETE PAGE V */
+.Order_1_Deletion {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top"
+      "center";
+    align-items: center;
+    justify-content: center;
+    margin:0 20px 20px 20px;
+    padding: 0 20px 0 20px;
+}
+
+.Order_1_Deletion > header {
+    background-color: #707251;
+    grid-area: top;
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    color: white;
+}
+
+.Order_1_Deletion > header > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Order_1_Deletion > #details {
+    background-color: #9F9D56;
+    grid-area: center;
+    padding: 20px;
+    margin:0 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.Order_1_Deletion > #details {
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    grid-template-areas: 
+      "top top"
+      "button1 button2";
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*label*/
+.Order_1_Deletion > #details > #label {
+    grid-area: top;
+    font-weight: 300;
+}
+
+/*button*/
+.Order_1_Deletion > #details > #no {
+    grid-area: button1;
+}
+.Order_1_Deletion > #details > #yes {
+    grid-area: button2;
+}
+/* ^ CONFIRM ORDER DELETE PAGE ^ */
 
 
 
