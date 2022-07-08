@@ -13,46 +13,6 @@ nav > .hidden{
     display: none;
 }
 
-@media screen and (max-width: 800px) {
-    nav > ul > li {
-        display: none;
-    }
-
-    nav > ul {
-        height: 0;
-    }
-
-    nav > .hidden{
-        display: block;
-        margin-bottom: 20px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
-        background-color: white;
-        height: 3.7em;
-        padding: 0 30px 0 30px;
-    }
-
-    nav > .hidden > a.icon {
-        display: block;
-        font-size: 33px;
-        color: #9d9d9d;
-        float: right;
-    }
-    nav.responsive {
-        position: relative;
-    }
-    nav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;   
-    }
-  }
-
 nav > ul {
     list-style-type: none;
     margin: 0;
