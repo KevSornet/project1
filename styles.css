@@ -73,7 +73,6 @@ nav > ul > li > a:active {
 /* ^ NAV BAR ^ */
 
 /* V BUTTON TEMPLATE V */
-
 .gen_button{
     background-color: rgb(97, 97, 97);
     border: none;
@@ -109,7 +108,6 @@ nav > ul > li > a:active {
 .deletebutton:hover{
     background-color: #7e0c0c;
 }
-
 /* ^ BUTTON TEMPLATE ^ */
 
 /* V MAIN V */
@@ -375,7 +373,7 @@ footer > p{
 /* grid for customer and button section */
 .customers_page > #customer_button {
     display: grid; 
-    grid-template-columns: auto 2fr 1fr; 
+    grid-template-columns: auto auto auto; 
     grid-template-rows: 4; 
     grid-template-areas: 
       "labels space space"
@@ -2634,7 +2632,7 @@ footer > p{
 /* grid for customer and button section */
 .orders_page > #order_list {
     display: grid; 
-    grid-template-columns: auto 2fr 1f; 
+    grid-template-columns: auto auto auto; 
     grid-template-rows: 5; 
     grid-template-areas: 
       "labels space space"
@@ -3520,7 +3518,7 @@ footer > p{
 }
 
 .Order_1_Deletion > header {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: top;
     padding: 20px;
     margin:20px;
@@ -3535,7 +3533,7 @@ footer > p{
 }
 
 .Order_1_Deletion > #details {
-    background-color: #9F9D56;
+    background-color: #CAA5A2;
     grid-area: center;
     padding: 20px;
     margin:0 20px 20px 20px;
@@ -3588,7 +3586,7 @@ footer > p{
 }
 
 .Order_1_Deleted > header {
-    background-color: #707251;
+    background-color: #A47470;
     grid-area: top;
     padding: 20px;
     margin:20px;
@@ -3603,7 +3601,7 @@ footer > p{
 }
 
 .Order_1_Deleted > #details {
-    background-color: #9F9D56;
+    background-color: #CAA5A2;
     grid-area: center;
     padding: 20px;
     margin:0 20px 20px 20px;
@@ -3659,7 +3657,7 @@ footer > p{
 /* V FOOTER V */
 .clear {
     clear: both; 
-    height: 120px;
+    height: 220px;
     margin: 20px 0 20px 0;
 }
 
@@ -3678,17 +3676,14 @@ footer > img{
     float: right;
     margin: 0 -80px 0 0;
 }
-
-.leftfoot{
+.leftfoot {
     float: left;
     margin: 0 0 10px 20px;
 }
-
-#copyright{
+.leftfoot > #copyright{
     font-size: 13px;
 }
-
-#rightfoot{
+footer > #rightfoot{
     float: right;
     padding-right: 30px;
 }
@@ -3698,5 +3693,4 @@ footer > img{
         padding-bottom: 140px;
     }
 }
-
 /* ^ FOOTER ^ */
